@@ -2,27 +2,26 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
+  // 환경 변수 로드 경로를 현재 작업 디렉토리로 설정
   const env = loadEnv(mode, process.cwd(), '');
   
   return {
-    // GitHub Pages 리포지토리 이름과 일치해야 함
+    // GitHub Pages 배포를 위한 기본 경로 (리포지토리 이름)
     base: '/DailySprout/', 
     
     plugins: [react()],
     
     resolve: {
       alias: {
-        // '@'를 src 폴더로 매핑
+        // '@' 별칭을 src 폴더로 연결
         '@': path.resolve(__dirname, './src'),
       },
     },
 
     build: {
-      // 빌드 결과물이 저장될 폴더
       outDir: 'dist',
-      // 빌드 프로세스가 시작되는 지점 명시
+      // index.html을 빌드 입구로 명시하여 경로 치환을 강제함
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
