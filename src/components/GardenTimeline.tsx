@@ -424,7 +424,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                       {currentCrop.topDressing1 && (
                         <div className="flex flex-col items-center">
                           <span className="text-[9px] font-black text-slate-400 uppercase tracking-tighter mb-1">1차 (웃거름)</span>
-                          <div className={`w-7 h-5 rounded-2xl flex items-center justify-center font-black text-[8px] shadow-sm transition-all ${currentSchedule?.dDay! >= currentCrop.topDressing1 ? 'bg-blue-600 text-white scale-110' : 'bg-slate-100 text-slate-400'}`}>
+                          <div className={`w-8 h-5 rounded-2xl flex items-center justify-center font-black text-[10px] shadow-sm transition-all ${currentSchedule?.dDay! >= currentCrop.topDressing1 ? 'bg-blue-600 text-white scale-110' : 'bg-slate-100 text-slate-400'}`}>
                             {currentCrop.topDressing1}일
                           </div>
                         </div>
@@ -432,7 +432,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                       {currentCrop.topDressing2 && (
                         <div className="flex flex-col items-center">
                           <span className="text-[9px] font-black text-slate-400 uppercase tracking-tighter mb-1">2차 (웃거름)</span>
-                          <div className={`w-7 h-5 rounded-2xl flex items-center justify-center font-black text-[8px] shadow-sm transition-all ${currentSchedule?.dDay! >= currentCrop.topDressing2 ? 'bg-blue-600 text-white scale-110' : 'bg-slate-100 text-slate-400'}`}>
+                          <div className={`w-8 h-5 rounded-2xl flex items-center justify-center font-black text-[10px] shadow-sm transition-all ${currentSchedule?.dDay! >= currentCrop.topDressing2 ? 'bg-blue-600 text-white scale-110' : 'bg-slate-100 text-slate-400'}`}>
                             {currentCrop.topDressing2}일
                           </div>
                         </div>
