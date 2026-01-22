@@ -18,7 +18,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 5,
     growthDays: 75,
-    image: 'https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/sprout.svg',
+    image: 'https://images.unsplash.com/photo-1592394533824-9440e5d68530?auto=format&fit=crop&q=80&w=400',
     description: '3월 초 파종 추천. 추위에 강해 일찍 심을 수 있는 덩굴 작물입니다. 지주대 설치가 필수입니다.',
     tempInfo: {
       germination: '2~5 °C 이상',
