@@ -1,12 +1,11 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // 1. base 경로 추가 (리포지토리 이름과 일치해야 함)
+      // GitHub Pages 배포를 위한 올바른 경로 설정
       base: '/DailySprout/', 
       
       server: {
@@ -14,10 +13,6 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       plugins: [react()],
-//      define: {
-//        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-//        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-//      },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
