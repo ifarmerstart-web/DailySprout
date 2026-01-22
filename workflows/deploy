@@ -1,0 +1,23 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [main] # main 브랜치에 푸시될 때 실행
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # 빌드 결과물이 저장되는 폴더
+          branch: gh-pages # 배포될 브랜치
