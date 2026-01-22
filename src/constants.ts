@@ -21,7 +21,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     image: 'https://images.unsplash.com/photo-1592394533824-9440e5d68530?auto=format&fit=crop&q=80&w=400',
     description: '3월 초 파종 추천. 추위에 강해 일찍 심을 수 있는 덩굴 작물입니다. 지주대 설치가 필수입니다.',
     tempInfo: {
-      germination: '2~5 °C 이상',
+      germination: '2~5 °C',
       growth: '15~20 °C',
       characteristic: '추위에 매우 강함, 25 °C 이상은 싫어함'
     },
@@ -44,7 +44,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     description: '영하의 날씨도 잘 견디는 "추위 대장"입니다. 짧은 기간에 수확 가능합니다.',
     tempInfo: {
       germination: '4 °C 이상',
-      growth: '15~20 °C 이상',
+      growth: '15~20 °C',
       characteristic: '25 °C 이상부터 꽃대가 올라옴(추동)'
     },
     topDressing1: 20,
@@ -149,8 +149,8 @@ export const MASTER_CROPS: MasterCrop[] = [
     image: 'https://images.unsplash.com/photo-1556801712-76c826667011?auto=format&fit=crop&q=80&w=400',
     description: '3월 중순 직파 가능 (비닐이나 부직포 필요). 겉흙이 마르지 않게 관리하세요.',
     tempInfo: {
-      germination: '15~20 °C 이상',
-      growth: '15~20 °C 이상',
+      germination: '15~20 °C',
+      growth: '15~20 °C',
       characteristic: '25 °C 이상의 고온에서는 발아가 불량함'
     },
     topDressing1: 30,
@@ -171,7 +171,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     image: 'https://images.unsplash.com/photo-1628173001886-068d875a6878?auto=format&fit=crop&q=80&w=400',
     description: '3월 중순 직파 가능 (비닐이나 부직포 필요). 특유의 향이 일품이며 추위에 강한 편입니다.',
     tempInfo: {
-      germination: '15~20 °C 이상',
+      germination: '15~20 °C',
       growth: '15~20 °C',
       characteristic: '서늘한 기후에서 잎이 연하게 자람'
     },
@@ -193,7 +193,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     image: 'https://images.unsplash.com/photo-1508500361003-8dc877028b12?auto=format&fit=crop&q=80&w=400',
     description: '3월 중순 직파 가능 (비닐이나 부직포 필요). 영양이 풍부하며 초봄 파종 시 보온이 필수입니다.',
     tempInfo: {
-      germination: '15~20 °C 이상',
+      germination: '15~20 °C',
       growth: '15~20 °C',
       characteristic: '서늘한 기후에서 잎이 연하게 자람'
     },
@@ -261,7 +261,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     description: '3월 초·중순에 심어두면 딱 좋습니다. 싹이 트기까지 2~3주가 걸리므로 미리 심으세요.',
     tempInfo: {
       germination: '5 °C 이상',
-      growth: '15~20 °C 이상',
+      growth: '15~20 °C',
       characteristic: '25 °C 이상이면 알뿌리 형성이 정지됨'
     },
     topDressing1: 30,
@@ -308,8 +308,8 @@ export const MASTER_CROPS: MasterCrop[] = [
     image: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&q=80&w=400',
     description: '겉잎부터 차례로 수확하는 대중적인 작물입니다.',
     tempInfo: {
-      germination: '15~20 °C 이상',
-      growth: '15~20 °C 이상',
+      germination: '15~20 °C',
+      growth: '15~20 °C',
       characteristic: '서늘한 기후 좋아함, 25도 이상 시 쓴맛 증가'
     },
     topDressing1: 20,
