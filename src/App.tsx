@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { RegionType, UserGardenItem } from '@/types';
-import { MASTER_CROPS } from './constants';
+import { MASTER_CROPS } from '@/constants';
 import RegionSelector from './components/RegionSelector';
 import GardenTimeline from './components/GardenTimeline';
 import CropRecommendation from './components/CropRecommendation';
