@@ -49,6 +49,7 @@ const RegionSelector: React.FC<RegionSelectorProps> = ({ onSelect }) => {
         <p className="text-[10px] text-slate-400 text-center font-medium leading-relaxed">
           * 4월 상순~5월 상순 실외 재배 가이드를 따릅니다.<br/>
           * 기상 이변에 따라 실제 환경은 다를 수 있습니다.
+          *AI 기반 자료로 구성되어 오류가 있을 수 있습니다.
         </p>
       </div>
     </div>
