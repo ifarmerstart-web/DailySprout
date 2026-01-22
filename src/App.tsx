@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import { RegionType, UserGardenItem } from '@/types';
 import { MASTER_CROPS } from '@/constants';
-import RegionSelector from './components/RegionSelector';
-import GardenTimeline from './components/GardenTimeline';
-import CropRecommendation from './components/CropRecommendation';
-import GuideTab from './components/GuideTab';
+import RegionSelector from '@/components/RegionSelector';
+import GardenTimeline from '@/components/GardenTimeline';
+import CropRecommendation from '@/components/CropRecommendation';
+import GuideTab from '@/components/GuideTab';
 
 const App: React.FC = () => {
   const [region, setRegion] = useState<RegionType | null>(() => {
