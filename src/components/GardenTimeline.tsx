@@ -450,11 +450,11 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                   </h4>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center text-[11px]">
-                      <span className="text-slate-500 font-bold">적정 발아온도</span>
+                      <span className="text-slate-500 font-bold">발아온도</span>
                       <span className="text-slate-900 font-black">{currentCrop.tempInfo.germination}</span>
                     </div>
                     <div className="flex justify-between items-center text-[11px]">
-                      <span className="text-slate-500 font-bold">적정 생육온도</span>
+                      <span className="text-slate-500 font-bold">생육온도</span>
                       <span className="text-slate-900 font-black">{currentCrop.tempInfo.growth}</span>
                     </div>
                     <div className="pt-2 border-t border-orange-100/50">
@@ -481,7 +481,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                   onClick={() => { onToggleHarvest(selectedItem.id); setSelectedItem(null); }}
                   className={`flex-1 py-3.5 rounded-xl font-black text-sm transition-all active:scale-95 ${selectedItem.isHarvested ? 'bg-slate-100 text-slate-400' : 'bg-green-600 text-white shadow-lg shadow-green-100/50'}`}
                 >
-                  {selectedItem.isHarvested ? '수확 완료로' : '수확 완료'}
+                  {selectedItem.isHarvested ? '완료취소' : '수확 완료'}
                 </button>
                 <button 
                   onClick={() => setSelectedItem(null)}
