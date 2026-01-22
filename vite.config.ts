@@ -1,22 +1,23 @@
-import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
-import react from '@vitejs/plugin-react';
-
+// vite.config.ts
 export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
-    return {
-      // GitHub Pages 배포를 위한 올바른 경로 설정
-      base: '/DailySprout/', 
-      
-      server: {
-        port: 3000,
-        host: '0.0.0.0',
+  const env = loadEnv(mode, '.', '');
+  return {
+    base: '/DailySprout/',
+    plugins: [react()],
+    build: {
+      // 빌드 결과물이 저장될 폴더
+      outDir: 'dist',
+      // 빌드 프로세스가 시작되는 지점이 루트임을 명시
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+        },
       },
-      plugins: [react()],
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, './src'),
-        }
-      }
-    };
+    },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+      },
+    },
+  };
 });
