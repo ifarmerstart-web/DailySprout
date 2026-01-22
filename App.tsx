@@ -79,12 +79,12 @@ const App: React.FC = () => {
   if (!region) return <RegionSelector onSelect={setRegion} />;
 
   return (
-    <div className="max-w-md mx-auto min-h-screen bg-green-50/30 flex flex-col pb-24 shadow-2xl relative border-x border-green-100/50">
+    <div className="max-w-md mx-auto min-h-screen bg-slate-50 flex flex-col pb-24 shadow-2xl relative">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md px-6 py-4 sticky top-0 z-20 flex justify-between items-center border-b border-green-100">
+      <header className="bg-white/90 backdrop-blur-md px-6 py-4 sticky top-0 z-20 flex justify-between items-center border-b border-slate-100">
         <div>
           <h1 className="text-xl font-black text-green-700 tracking-tighter">나만의 작은 텃밭</h1>
-          <p className="text-[10px] font-bold text-green-400 uppercase tracking-widest">
+          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
             {region === RegionType.NORTH ? 'Northern' : region === RegionType.SOUTH ? 'Southern' : 'Central'} District
           </p>
         </div>
@@ -131,7 +131,7 @@ const App: React.FC = () => {
         )}
         {activeTab === 'settings' && (
           <div className="space-y-6">
-            <div className="bg-white p-6 rounded-[32px] shadow-sm border border-green-100">
+            <div className="bg-white p-6 rounded-[32px] shadow-sm border border-slate-100">
               <div className="flex justify-between items-center mb-4 px-1">
                 <h2 className="text-lg font-black text-slate-800 tracking-tight">재배 환경</h2>
                 <button 
@@ -141,9 +141,9 @@ const App: React.FC = () => {
                   (변경)
                 </button>
               </div>
-              <div className="p-4 bg-green-50/50 rounded-2xl border border-green-100 flex justify-between items-center">
-                <span className="text-sm font-bold text-green-700/60">현재 설정 지역</span>
-                <span className="text-sm font-black text-green-900 bg-white px-3 py-1 rounded-lg border border-green-100 shadow-sm">{region} 지방</span>
+              <div className="p-4 bg-slate-50/50 rounded-2xl border border-slate-100 flex justify-between items-center">
+                <span className="text-sm font-bold text-slate-500">현재 설정 지역</span>
+                <span className="text-sm font-black text-slate-900 bg-white px-3 py-1 rounded-lg border border-slate-100 shadow-sm">{region} 지방</span>
               </div>
             </div>
             <GuideTab />
@@ -153,9 +153,9 @@ const App: React.FC = () => {
 
       {/* Region Update Modal */}
       {isRegionModalOpen && (
-        <div className="fixed inset-0 z-[100] flex items-end justify-center bg-green-900/40 backdrop-blur-sm p-4" onClick={() => setIsRegionModalOpen(false)}>
+        <div className="fixed inset-0 z-[100] flex items-end justify-center bg-black/40 backdrop-blur-sm p-4" onClick={() => setIsRegionModalOpen(false)}>
           <div className="w-full max-w-md bg-white rounded-t-[40px] shadow-2xl p-6 animate-slide-up" onClick={e => e.stopPropagation()}>
-            <div className="w-10 h-1 bg-green-100 rounded-full mx-auto mb-6"></div>
+            <div className="w-10 h-1 bg-slate-200 rounded-full mx-auto mb-6"></div>
             <h3 className="text-xl font-black text-slate-900 mb-2 tracking-tight text-center">지역 변경하기</h3>
             <p className="text-slate-500 text-center mb-8 text-xs font-bold leading-relaxed">
               변경한 지역에 맞춰 권장 재배 일정과<br/>수확 예정일이 자동으로 업데이트됩니다.
@@ -167,27 +167,27 @@ const App: React.FC = () => {
                 desc="경기 북부, 강원 등 (서늘한 기후)" 
                 active={region === RegionType.NORTH}
                 onClick={() => handleRegionChange(RegionType.NORTH)} 
-                color="bg-blue-50/80"
+                color="bg-blue-50"
               />
               <RegionOption 
                 title="중부 지방" 
                 desc="서울, 경기 남부, 충청 (기준점)" 
                 active={region === RegionType.CENTRAL}
                 onClick={() => handleRegionChange(RegionType.CENTRAL)} 
-                color="bg-yellow-50/80"
+                color="bg-yellow-50"
               />
               <RegionOption 
                 title="남부 지방" 
                 desc="전라, 경상, 제주 (따뜻한 기후)" 
                 active={region === RegionType.SOUTH}
                 onClick={() => handleRegionChange(RegionType.SOUTH)} 
-                color="bg-orange-50/80"
+                color="bg-orange-50"
               />
             </div>
             
             <button 
               onClick={() => setIsRegionModalOpen(false)}
-              className="w-full py-3.5 bg-green-50 text-green-600 rounded-2xl font-black text-sm active:scale-95 transition-all"
+              className="w-full py-3.5 bg-slate-100 text-slate-500 rounded-2xl font-black text-sm active:scale-95 transition-all"
             >
               닫기
             </button>
@@ -196,7 +196,7 @@ const App: React.FC = () => {
       )}
 
       {/* Bottom Navigation */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl border-t border-green-100 px-4 py-4 flex justify-around items-center z-30 max-w-md mx-auto rounded-t-[40px] shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-t border-slate-100 px-4 py-4 flex justify-around items-center z-30 max-w-md mx-auto rounded-t-[40px] shadow-2xl">
         <NavButton active={activeTab === 'season'} icon="🌱" label="시즌" onClick={() => setActiveTab('season')} />
         <NavButton active={activeTab === 'perennial'} icon="♾️" label="다년생" onClick={() => setActiveTab('perennial')} />
         <NavButton active={activeTab === 'calendar'} icon="📅" label="작물" onClick={() => {
@@ -235,7 +235,7 @@ const RegionOption = ({ title, desc, active, onClick, color }: { title: string, 
 const NavButton = ({ active, icon, label, onClick }: { active: boolean, icon: string, label: string, onClick: () => void }) => (
   <button 
     onClick={onClick}
-    className={`flex flex-col items-center gap-1 transition-all ${active ? 'scale-110' : 'opacity-30 grayscale'}`}
+    className={`flex flex-col items-center gap-1 transition-all ${active ? 'scale-110' : 'opacity-40 grayscale'}`}
   >
     <span className="text-xl">{icon}</span>
     <span className={`text-[10px] font-black uppercase tracking-tighter ${active ? 'text-green-700' : 'text-slate-400'}`}>
