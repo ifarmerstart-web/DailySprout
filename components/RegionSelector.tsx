@@ -9,13 +9,12 @@ interface RegionSelectorProps {
 const RegionSelector: React.FC<RegionSelectorProps> = ({ onSelect }) => {
   return (
     <div className="max-w-md mx-auto min-h-screen bg-green-50 flex flex-col items-center justify-center p-8">
-      <div className="w-24 h-24 bg-green-600 rounded-3xl flex items-center justify-center mb-8 shadow-xl rotate-3 relative overflow-hidden">
-        <div className="absolute inset-0 bg-white/10 opacity-50"></div>
-        <span className="text-5xl z-10">🇰🇷</span>
+      <div className="w-24 h-24 bg-green-600 rounded-[32px] flex items-center justify-center mb-10 shadow-[0_20px_40px_rgba(5,150,105,0.2)] rotate-3 border-4 border-white">
+        <span className="text-5xl">🪴</span>
       </div>
-      <h1 className="text-2xl font-black text-slate-800 mb-2 tracking-tight">재배 지역 선택</h1>
-      <p className="text-slate-500 text-center mb-10 text-sm font-medium">
-        농촌진흥청 데이터를 기반으로<br/>지역별 최적의 농사 타이밍을 계산합니다.
+      <h1 className="text-2xl font-black text-slate-800 mb-2 tracking-tight">나만의 작은 텃밭</h1>
+      <p className="text-slate-500 text-center mb-12 text-sm font-bold leading-relaxed opacity-70">
+        농촌진흥청 데이터를 기반으로<br/>지역별 최적의 재배 일정을 추천합니다.
       </p>
       
       <div className="w-full space-y-4">
@@ -23,34 +22,31 @@ const RegionSelector: React.FC<RegionSelectorProps> = ({ onSelect }) => {
           title="북부 지방" 
           desc="경기 북부, 강원 등 (서늘한 기후)" 
           onClick={() => onSelect(RegionType.NORTH)} 
-          badge="약 8일 지연"
-          color="bg-blue-50"
-          border="border-blue-100"
+          badge="약 10일 지연"
+          color="bg-white"
+          textColor="text-blue-600"
         />
         <RegionButton 
           title="중부 지방" 
           desc="서울, 경기 남부, 충청 (기준점)" 
           onClick={() => onSelect(RegionType.CENTRAL)} 
-          badge="RDA 기준"
-          color="bg-yellow-50"
-          border="border-yellow-100"
+          badge="표준 일정"
+          color="bg-green-600"
+          isPrimary
         />
         <RegionButton 
           title="남부 지방" 
           desc="전라, 경상, 제주 (따뜻한 기후)" 
           onClick={() => onSelect(RegionType.SOUTH)} 
           badge="약 10일 조기"
-          color="bg-orange-50"
-          border="border-orange-100"
+          color="bg-white"
+          textColor="text-orange-600"
         />
       </div>
       
-      <div className="mt-12 p-4 bg-white/50 rounded-xl border border-slate-100">
-        <p className="text-[10px] text-slate-400 text-center font-medium leading-relaxed">
-          * 4월 상순~5월 상순 실외 재배 가이드를 따릅니다.<br/>
-          * 기상 이변에 따라 실제 환경은 다를 수 있습니다.
-        </p>
-      </div>
+      <p className="mt-16 text-[10px] text-green-800/30 text-center font-black uppercase tracking-widest">
+        Smart Garden Manager v1.0
+      </p>
     </div>
   );
 };
@@ -61,17 +57,25 @@ const RegionButton: React.FC<{
   onClick: () => void; 
   badge: string; 
   color: string;
-  border: string;
-}> = ({ title, desc, onClick, badge, color, border }) => (
+  textColor?: string;
+  isPrimary?: boolean;
+}> = ({ title, desc, onClick, badge, color, textColor = 'text-green-700', isPrimary }) => (
   <button 
     onClick={onClick}
-    className={`w-full ${color} p-5 rounded-3xl shadow-sm border ${border} hover:scale-[1.02] active:scale-95 transition-all text-left group`}
+    className={`w-full ${color} p-6 rounded-[32px] shadow-sm border border-green-100 hover:scale-[1.02] active:scale-95 transition-all text-left group flex items-center justify-between ${isPrimary ? 'shadow-green-200 shadow-xl' : ''}`}
   >
-    <div className="flex justify-between items-center mb-1">
-      <span className="font-bold text-lg text-slate-800 group-hover:text-slate-900">{title}</span>
-      <span className="bg-white/80 text-slate-500 px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-wider">{badge}</span>
+    <div>
+      <div className="flex items-center gap-2 mb-1">
+        <span className={`font-black text-lg ${isPrimary ? 'text-white' : 'text-slate-800'}`}>{title}</span>
+        <span className={`text-[8px] font-black px-2 py-0.5 rounded-full uppercase tracking-tighter ${isPrimary ? 'bg-white/20 text-white' : 'bg-green-50 text-green-600'}`}>
+          {badge}
+        </span>
+      </div>
+      <span className={`text-xs font-bold ${isPrimary ? 'text-white/70' : 'text-slate-400'}`}>{desc}</span>
     </div>
-    <span className="text-xs text-slate-500 font-medium">{desc}</span>
+    <div className={`w-10 h-10 rounded-2xl flex items-center justify-center transition-transform group-hover:translate-x-1 ${isPrimary ? 'bg-white/20 text-white' : 'bg-green-50 text-green-400'}`}>
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" /></svg>
+    </div>
   </button>
 );
 
