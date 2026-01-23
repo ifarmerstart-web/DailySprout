@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   
   return {
     // GitHub Pages 경로 설정
-    base: '/DailySprout/', 
+    base: '/', 
     
     plugins: [react()],
     
