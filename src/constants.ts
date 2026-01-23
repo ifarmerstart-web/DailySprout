@@ -18,7 +18,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 5,
     growthDays: 75,
-    image: 'https://images.unsplash.com/photo-1592394533824-9440e5d68530?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '3월 초 파종 추천. 추위에 강해 일찍 심을 수 있는 덩굴 작물입니다. 지주대 설치가 필수입니다.',
     tempInfo: {
       germination: '2~5 °C',
@@ -40,7 +40,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 5,
     growthDays: 45,
-    image: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '영하의 날씨도 잘 견디는 "추위 대장"입니다. 짧은 기간에 수확 가능합니다.',
     tempInfo: {
       germination: '4 °C 이상',
@@ -62,13 +62,8 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 5,
     growthDays: 120,
-    image: 'https://images.unsplash.com/photo-1416870262648-2513df5e3b8c?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '발아 기간이 길어 일찍 심어두는 게 유리합니다. 인내심이 필요해요.',
-    tempInfo: {
-      germination: '15 ~ 25 °C',
-      growth: '15 ~ 20 °C',
-      characteristic: '서늘한 기후를 좋아하며, 추위에도 매우 강해 영하에서도 잘 견딤'
-    },
     topDressing1: 40,
     topDressing2: 80,
     fertilizerTip: '성장기 내내 비료 요구량이 많습니다. 1~2달 간격으로 웃거름을 주세요.',
@@ -85,7 +80,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 5,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1473211181413-a4478f7736f1?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '저온 발아력이 좋아 초봄 직파에 적합합니다. 잎채소로 활용하세요.',
     topDressing1: 30,
     fertilizerTip: '초기 성장이 중요하므로 밑거름에 신경 써주세요.',
@@ -102,7 +97,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 10,
     growthDays: 90,
-    image: 'https://images.unsplash.com/photo-1590409866827-2b7301c23315?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '하늘을 향해 자라는 콩입니다. 서늘한 기후를 좋아하며 진딧물 관리가 중요합니다.',
     tempInfo: {
       germination: '5~10 °C',
@@ -124,7 +119,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 25,
     growthDays: 140,
-    image: 'https://images.unsplash.com/photo-1610447735310-75d311910609?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '뿌리가 깊게 들어가므로 밭을 깊게 갈아야 합니다. 향이 좋은 뿌리 채소입니다.',
     tempInfo: {
       germination: '10~15 °C',
@@ -146,7 +141,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 15,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1556801712-76c826667011?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '3월 중순 직파 가능 (비닐이나 부직포 필요). 겉흙이 마르지 않게 관리하세요.',
     tempInfo: {
       germination: '15~20 °C',
@@ -168,7 +163,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 15,
     growthDays: 50,
-    image: 'https://images.unsplash.com/photo-1628173001886-068d875a6878?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '3월 중순 직파 가능 (비닐이나 부직포 필요). 특유의 향이 일품이며 추위에 강한 편입니다.',
     tempInfo: {
       germination: '15~20 °C',
@@ -190,7 +185,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 15,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1508500361003-8dc877028b12?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '3월 중순 직파 가능 (비닐이나 부직포 필요). 영양이 풍부하며 초봄 파종 시 보온이 필수입니다.',
     tempInfo: {
       germination: '15~20 °C',
@@ -212,7 +207,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 15,
     growthDays: 100,
-    image: 'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '3월 중순 직파 가능 (비닐이나 부직포 필요). 발아가 느리니 보습 유지에 신경 쓰세요.',
     tempInfo: {
       germination: '15~20 °C',
@@ -235,7 +230,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 3,
     basePlantDay: 15,
     growthDays: 70,
-    image: 'https://images.unsplash.com/photo-1582515073490-39981397c445?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '3월 중순 직파 가능 (비닐이나 부직포 필요). 빠르게 자라지만 저온기 꽃대 발생에 주의하세요.',
     tempInfo: {
       germination: '15~20 °C',
@@ -248,31 +243,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     commonPests: ['벼룩잎벌레', '고자리파리'],
     preventionTip: '한랭사와 비닐 멀칭을 병행하면 벌레 차단과 보온에 좋습니다.'
   },
-  {
-    id: 'potato',
-    name: '감자',
-    type: '3월 중순 (직파)',
-    method: PlantingMethod.SEED,
-    isPerennial: false,
-    basePlantMonth: 3,
-    basePlantDay: 15,
-    growthDays: 100,
-    image: 'https://images.unsplash.com/photo-1518977676601-b53f02bad673?auto=format&fit=crop&q=80&w=400',
-    description: '3월 초·중순에 심어두면 딱 좋습니다. 싹이 트기까지 2~3주가 걸리므로 미리 심으세요.',
-    tempInfo: {
-      germination: '5 °C 이상',
-      growth: '15~20 °C',
-      characteristic: '25 °C 이상이면 알뿌리 형성이 정지됨'
-    },
-    topDressing1: 30,
-    topDressing2: 50,
-    fertilizerTip: '싹이 10~15cm 자랐을 때 1차 웃거름을 주며 북주기를 병행하세요.',
-    careSteps: [{ daysAfter: 30, action: '북주기', description: '흙을 덮어 감자 노출을 방지합니다.' }],
-    commonPests: ['역병', '진딧물'],
-    preventionTip: '씨감자 심을 때 소독된 칼 사용, 물 빠짐 좋은 흙 조성',
-    emergencyAction: '역병 증상 시 즉시 살균제 살포 및 병든 포기 제거',
-    nutrientDeficiency: '질소 부족 시 잎이 노랗게 변함'
-  },
+ 
   // --- 4월 작물 ---
   {
     id: 'bok_choy',
@@ -283,7 +254,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 5,
     growthDays: 45,
-    image: 'https://images.unsplash.com/photo-1550503027-e43673f32488?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '성장이 빠르고 벌레가 좋아하는 작물입니다. 한랭사를 씌우면 깨끗하게 키울 수 있습니다.',
     tempInfo: {
       germination: '15~20 °C',
@@ -305,7 +276,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 10,
     growthDays: 45,
-    image: 'https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '겉잎부터 차례로 수확하는 대중적인 작물입니다.',
     tempInfo: {
       germination: '15~20 °C',
@@ -328,7 +299,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 15,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1632158872225-e51e22026852?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '키가 작은 왜성종은 지지대가 필요 없어 키우기 쉽습니다. 장마 전에 수확합니다.',
     tempInfo: {
       germination: '20~25 °C',
@@ -350,7 +321,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 15,
     growthDays: 160,
-    image: 'https://images.unsplash.com/photo-1549553063-441f173c383d?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '물을 매우 좋아하는 작물입니다. 습한 곳에서도 잘 자라며 알토란 같은 수확의 기쁨을 줍니다.',
     tempInfo: {
       germination: '25~30 °C',
@@ -373,7 +344,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 20,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '비타민이 풍부한 허브입니다. 겉잎을 수확하면 안쪽에서 새 잎이 계속 나옵니다.',
     tempInfo: {
       germination: '15~20 °C',
@@ -395,7 +366,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 25,
     growthDays: 180,
-    image: 'https://images.unsplash.com/photo-1589133887010-388220040404?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '덩굴성 작물로 지주대나 유인망이 필요합니다. 물 빠짐이 좋은 깊은 흙에서 잘 자랍니다.',
     tempInfo: {
       germination: '15~20 °C',
@@ -417,7 +388,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 25,
     growthDays: 70,
-    image: 'https://images.unsplash.com/photo-1550523281-9b167094254b?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '벌레가 매우 좋아하는 작물입니다. 결구(속이 차는 것)를 위해 꾸준한 물 주기가 필요합니다.',
     tempInfo: {
       germination: '15~30 °C',
@@ -440,7 +411,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 25,
     growthDays: 90,
-    image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '서리가 끝난 4월 말~5월 초에 심습니다. 곁순 제거가 필수입니다.',
     tempInfo: {
       germination: '25~30 °C',
@@ -465,7 +436,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 28,
     growthDays: 120,
-    image: 'https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '냉해에 약해 늦서리가 지난 후(4월 말 이후) 심어야 합니다. 지지대가 필수입니다.',
     tempInfo: {
       germination: '28~30 °C',
@@ -490,7 +461,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 25,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '성장이 매우 빠르며 물을 많이 필요로 합니다. 덩굴손이 나오면 유인망을 설치하세요.',
     tempInfo: {
       germination: '25~30 °C',
@@ -516,7 +487,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 25,
     growthDays: 70,
-    image: 'https://images.unsplash.com/photo-1572622616231-158a74b12192?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '척박한 땅에서도 잘 자라며 넓은 공간이 필요합니다. 서리가 내리면 죽으므로 늦게 심습니다.',
     tempInfo: {
       germination: '25~30 °C',
@@ -538,7 +509,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 25,
     growthDays: 90,
-    image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '키가 크고 비료를 많이 먹습니다. 수정이 잘 되도록 2줄 이상 모아서 심어주세요.',
     tempInfo: {
       germination: '25~30 °C',
@@ -565,7 +536,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 30,
     growthDays: 70,
-    image: 'https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '추위에 매우 약해 5월 초 안전하게 심는 것이 좋습니다. 물과 비료를 매우 좋아합니다.',
     tempInfo: {
       germination: '25~30 °C',
@@ -588,7 +559,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 30,
     growthDays: 160,
-    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '발아까지 한 달 이상 걸립니다. 반그늘에서도 잘 자라며 가을 서리 내리기 전 수확합니다.',
     tempInfo: {
       germination: '20~30 °C',
@@ -611,10 +582,10 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 5,
     basePlantDay: 5,
     growthDays: 120,
-    image: 'https://images.unsplash.com/photo-1596097635121-14b63b7a7843?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '5월 초·중순에 심어 서리 내리기 전 수확합니다. 물 빠짐이 좋은 마사토가 적합합니다.',
     tempInfo: {
-      germination: '30~33 °C (싹우기)',
+      germination: '30~33 °C (싹틔우기)',
       growth: '20~30 °C',
       characteristic: '밤 기온 15 °C 이상일 때 심어야 활착이 잘 됨'
     },
@@ -633,7 +604,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 5,
     basePlantDay: 5,
     growthDays: 80,
-    image: 'https://images.unsplash.com/photo-1563565375-f3fdf5dbc240?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '고추보다 고온을 좋아합니다. 초기 성장이 느리므로 인내심이 필요합니다.',
     tempInfo: {
       germination: '25~30 °C',
@@ -656,10 +627,10 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 5,
     basePlantDay: 5,
     growthDays: 140,
-    image: 'https://images.unsplash.com/photo-1567375698509-46229bf2e748?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '꽃이 지고 자방병이 땅속으로 들어가 열매를 맺습니다. 흙이 부드러워야 합니다.',
     tempInfo: {
-      germination: '20 °C 이상',
+      germination: '20 °C',
       growth: '25~30 °C',
       characteristic: '고온성 작물, 서리 피해 주의'
     },
@@ -680,7 +651,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 5,
     basePlantDay: 5,
     growthDays: 90,
-    image: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '넓은 공간과 많은 햇빛이 필요합니다. 순지르기와 인공수분이 중요합니다.',
     tempInfo: {
       germination: '25~30 °C',
@@ -705,7 +676,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 5,
     basePlantDay: 5,
     growthDays: 90,
-    image: 'https://images.unsplash.com/photo-1601646761685-65fc06c64608?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '손자덩굴에서 열매가 맺힙니다. 순지르기가 핵심인 작물입니다.',
     tempInfo: {
       germination: '25~30 °C',
@@ -727,7 +698,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 5,
     basePlantDay: 10,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1457190366406-039c36294d5d?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '아열대 작물로 더위에 매우 강합니다. 꽃이 예쁘고 열매가 하늘을 향해 자랍니다.',
     tempInfo: {
       germination: '25~30 °C',
@@ -749,7 +720,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 5,
     basePlantDay: 15,
     growthDays: 40,
-    image: 'https://images.unsplash.com/photo-1596791163459-c29013531b78?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '아무 데서나 잘 자라는 생명력 강한 작물입니다. 잎을 수확하려면 순을 자주 질러주세요.',
     tempInfo: {
       germination: '20~25 °C',
@@ -771,7 +742,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 5,
     basePlantDay: 25,
     growthDays: 130,
-    image: 'https://images.unsplash.com/photo-1627883262696-2775f0f353a8?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '새 피해를 막는 것이 중요합니다. 척박한 땅에서도 잘 자랍니다.',
     tempInfo: {
       germination: '20~25 °C',
@@ -797,7 +768,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 15,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1594914148221-38842be49492?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '한 번 심으면 계속 수확 가능한 효자 작물입니다.',
     harvestCycle: '잎이 20cm 될 때마다 수시로',
     fertilizerTip: '수확 직후마다 즉시 요소 등 속효성 비료를 주어 재생을 돕습니다.',
@@ -815,7 +786,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 15,
     growthDays: 730, // 2년 후 수확
-    image: 'https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '심고 2년 뒤부터 본격 수확이 가능한 인내심 작물입니다.',
     harvestCycle: '매년 4~6월 중순까지',
     fertilizerTip: '이른 봄(3월) 잠깨우기 비료와 수확 종료 후(6월) 감사 비료를 듬뿍 주세요.',
@@ -832,7 +803,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 4,
     basePlantDay: 15,
     growthDays: 60,
-    image: 'https://images.unsplash.com/photo-1464965211904-c72145d6936d?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '멀칭으로 열매가 흙에 닿지 않게 보호합니다.',
     harvestCycle: '매년 5~6월',
     fertilizerTip: '꽃이 필 때(4월) 인산·칼리 위주 비료가 맛과 당도를 좋게 합니다.',
@@ -850,7 +821,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 10,
     basePlantDay: 20,
     growthDays: 240,
-    image: 'https://images.unsplash.com/photo-1615477210080-9a3b6d43da26?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '10월에 심어 겨울을 나고 다음 해 6월에 수확하는 월동 작물입니다.',
     tempInfo: {
       germination: '15~20 °C',
@@ -876,7 +847,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 10,
     basePlantDay: 25,
     growthDays: 230,
-    image: 'https://images.unsplash.com/photo-1618512496248-a07fe83aa829?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '10월 말 모종을 심어 겨울을 납니다. 배수가 잘 되는 땅을 좋아합니다.',
     tempInfo: {
       germination: '15~20 °C',
@@ -899,7 +870,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantMonth: 10,
     basePlantDay: 25,
     growthDays: 235, 
-    image: 'https://images.unsplash.com/photo-1575881875475-31023242e3f9?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=400',
     description: '10월 하순 파종하여 겨울을 나는 토종 작물입니다. 밟아줄수록 뿌리가 튼튼해지는 강인함을 가졌습니다.',
     tempInfo: {
       germination: '4 °C 이상',
