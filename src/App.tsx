@@ -131,19 +131,18 @@ const App: React.FC = () => {
         )}
         {activeTab === 'settings' && (
           <div className="space-y-6">
-            <div className="bg-white p-6 rounded-[32px] shadow-sm border border-slate-100">
-              <div className="flex justify-between items-center mb-4 px-1">
-                <h2 className="text-lg font-black text-slate-800 tracking-tight">재배 환경</h2>
-                <button 
-                  onClick={() => setIsRegionModalOpen(true)}
-                  className="text-xs font-black text-green-600 hover:text-green-700 transition-colors bg-green-50 px-3 py-1 rounded-full active:scale-95"
-                >
-                  (변경)
-                </button>
-              </div>
-              <div className="p-4 bg-slate-50/50 rounded-2xl border border-slate-100 flex justify-between items-center">
-                <span className="text-sm font-bold text-slate-500">현재 설정 지역</span>
-                <span className="text-sm font-black text-slate-900 bg-white px-3 py-1 rounded-lg border border-slate-100 shadow-sm">{region} 지방</span>
+            <div className="bg-white p-6 rounded-[32px] shadow-sm border border-green-100">
+              <div className="p-4 bg-green-50/50 rounded-2xl border border-green-100 flex justify-between items-center">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-bold text-green-700/60">현재 설정 지역</span>
+                  <button 
+                    onClick={() => setIsRegionModalOpen(true)}
+                    className="text-[10px] font-black text-green-600 hover:text-green-700 transition-colors bg-orange-50/80 px-2 py-0.5 rounded-full active:scale-95"
+                  >
+                    (변경)
+                  </button>
+                </div>
+                <span className="text-sm font-black text-green-900 bg-white px-3 py-1 rounded-lg border border-green-100 shadow-sm">{region} 지방</span>
               </div>
             </div>
             <GuideTab />
