@@ -17,7 +17,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
           # cache: 'npm' 부분을 제거했습니다.
       - run: npm install
       - run: npm run build
