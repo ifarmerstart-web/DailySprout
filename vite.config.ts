@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig(({ mode }) => {
-  // 현재 작업 디렉토리에서 환경 변수 로드
   const env = loadEnv(mode, process.cwd(), '');
   
   return {
