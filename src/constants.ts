@@ -473,7 +473,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     fertilizerTip: '첫 열매 착과 시 1차 웃거름을 주며, 이후 30일 간격으로 복합비료 처방',
     careSteps: [{ daysAfter: 15, action: '지지대 설치', description: '바람에 쓰러지지 않게 고정합니다.' }],
     commonPests: ['탄저병', '진딧물', '총채벌레'],
-    preventionTip: '장마 전 탄저병 예방제 살포, 튼튼한 지지대로 통풍 확보',
+    preventionTip: '장마 전 탄저병 예방제 살포, 습도가 80% 이상 지속될 때 "탄저병 발생 위험이 높습니다',
     emergencyAction: '난황유(계란노른자+식용유) 살포 또는 친환경 살충제 사용',
     nutrientDeficiency: '칼슘 결핍 시 열매 끝이 썩으므로 칼슘제 엽면시비 권장'
   },
