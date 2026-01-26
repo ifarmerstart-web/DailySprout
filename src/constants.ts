@@ -10,6 +10,31 @@ export const REGION_OFFSETS: Record<RegionType, number> = {
 export const MASTER_CROPS: MasterCrop[] = [
   // --- 기존 봄 작물 ---
   {
+    id: 'potato',
+    name: '감자',
+    type: '3월 중순 (직파)',
+    method: PlantingMethod.SEED,
+    isPerennial: false,
+    basePlantMonth: 3,
+    basePlantDay: 15,
+    growthDays: 100,
+    image: 'https://images.unsplash.com/photo-1518977676601-b53f02ac6d31?auto=format&fit=crop&q=80&w=400',
+    description: '3월 초·중순에 심어두면 딱 좋습니다. 싹이 트기까지 2~3주가 걸리므로 미리 심으세요.',
+    tempInfo: {
+      germination: '5 °C 이상',
+      growth: '15~20 °C',
+      characteristic: '25 °C 이상이면 알뿌리 형성이 정지되므로 주의하세요'
+    },
+    topDressing1: 30,
+    topDressing2: 50,
+    fertilizerTip: '싹이 10~15cm 자랐을 때 1차 웃거름을 주며 북주기를 병행하세요.',
+    careSteps: [{ daysAfter: 30, action: '북주기', description: '흙을 덮어 감자 노출을 방지합니다.' }],
+    commonPests: ['역병', '진딧물'],
+    preventionTip: '씨감자 심을 때 소독된 칼 사용, 물 빠짐 좋은 흙 조성',
+    emergencyAction: '역병 증상 시 즉시 살균제 살포 및 병든 포기 제거',
+    nutrientDeficiency: '질소 부족 시 잎이 노랗게 변함'
+  },
+  {
     id: 'pea',
     name: '완두콩',
     type: '3월 초 (직파)',
