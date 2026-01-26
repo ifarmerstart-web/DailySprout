@@ -65,7 +65,7 @@ export const calculateSchedule = (
     if (today.getMonth() === 2) fertilizerAlert = "잠깨우기 비료 시기";
   }
 
-  // 수확 진행률
+  // 수확 진행률 표기
   const harvestProgress = Math.min(100, (diffDays / crop.growthDays) * 100);
 
   return {
