@@ -6,8 +6,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
  
   return {
-    base: '/DailySprout/',
     plugins: [react()],
+    base: '/DailySprout/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '/src'),
