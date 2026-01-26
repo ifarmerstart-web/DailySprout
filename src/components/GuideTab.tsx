@@ -73,13 +73,66 @@ const FARMER_GUIDES: GuideContent[] = [
     emoji: "🔋",
     color: "bg-blue-50",
     details: (
-      <div className="space-y-4">
-        <p className="text-xs text-slate-600 leading-relaxed">작물의 성장 단계에 맞춰 알맞은 영양분을 공급해야 합니다.</p>
-        <ul className="text-[11px] text-slate-500 space-y-2 font-medium">
-          <li>• <strong>밑거름:</strong> 심기 전 흙에 미리 섞어주는 기초 영양</li>
-          <li>• <strong>웃거름:</strong> 성장 중간에 추가로 주는 보충 영양 (뿌리에서 멀리!)</li>
-          <li>• <strong>주의:</strong> 비료가 잎이나 줄기에 직접 닿으면 비료 장애가 생길 수 있습니다.</li>
-        </ul>
+      <div className="space-y-6">
+        <section>
+          <h5 className="text-sm font-black text-blue-700 mb-3 flex items-center gap-2">
+            농사의 3대 요소 (N-P-K)
+          </h5>
+          <div className="overflow-hidden rounded-2xl border border-blue-100">
+            <table className="w-full text-[10px] text-left border-collapse">
+              <thead>
+                <tr className="bg-blue-100/50">
+                  <th className="p-2 font-black text-blue-800 border-b border-blue-100">성분</th>
+                  <th className="p-2 font-black text-blue-800 border-b border-blue-100">역할 (비유)</th>
+                  <th className="p-2 font-black text-blue-800 border-b border-blue-100">결핍 시 증상</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white">
+                <tr>
+                  <td className="p-2 border-b border-blue-50 font-bold text-slate-700">N (질소)</td>
+                  <td className="p-2 border-b border-blue-50 text-slate-500 leading-tight">잎과 줄기 성장<br/>(근육과 체격)</td>
+                  <td className="p-2 border-b border-blue-50 text-red-500 font-medium leading-tight">잎이 누렇게 변함<br/>성장이 더딤</td>
+                </tr>
+                <tr>
+                  <td className="p-2 border-b border-blue-50 font-bold text-slate-700">P (인산)</td>
+                  <td className="p-2 border-b border-blue-50 text-slate-500 leading-tight">뿌리, 꽃/열매<br/>(에너지와 생식)</td>
+                  <td className="p-2 border-b border-blue-50 text-red-500 font-medium leading-tight">뿌리 발달 저하<br/>개화 지연</td>
+                </tr>
+                <tr>
+                  <td className="p-2 font-bold text-slate-700">K (칼륨)</td>
+                  <td className="p-2 text-slate-500 leading-tight">병해충 저항력<br/>(면역력과 뼈)</td>
+                  <td className="p-2 text-red-500 font-medium leading-tight">잎 끝이 타들어가고<br/>열매가 작음</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="p-4 bg-red-50 rounded-2xl border border-red-100">
+          <h5 className="text-[11px] font-black text-red-700 mb-2 flex items-center gap-2 uppercase tracking-tighter">
+            ⚠️ 비료 사용 시 주의사항 (비룡의 경고)
+          </h5>
+          <ul className="space-y-2 text-[10px] text-slate-600 font-medium">
+            <li className="flex gap-1.5">
+              <span className="text-red-400 mt-0.5">•</span>
+              <span><strong>과유불급:</strong> 많이 준다고 잘 자라지 않습니다. 과하면 작물이 말라 죽을 수 있습니다.</span>
+            </li>
+            <li className="flex gap-1.5">
+              <span className="text-red-400 mt-0.5">•</span>
+              <span><strong>가스 피해 주의:</strong> 덜 부숙된 퇴비를 넣으면 가스가 발생해 뿌리가 썩습니다.</span>
+            </li>
+            <li className="flex gap-1.5">
+              <span className="text-red-400 mt-0.5">•</span>
+              <span><strong>수분 공급:</strong> 비료를 준 후에는 물을 충분히 주어 성분이 잘 녹아들게 하세요.</span>
+            </li>
+          </ul>
+        </section>
+
+        <div className="p-4 bg-blue-50/50 rounded-2xl border border-blue-100">
+          <p className="text-[10px] text-blue-800 font-bold leading-relaxed">
+            💡 <strong>기본 원칙:</strong> 밑거름은 심기 전 흙에 섞고, 웃거름은 뿌리에서 조금 떨어진 곳에 주어 비료 장애를 예방하세요.
+          </p>
+        </div>
       </div>
     )
   },
