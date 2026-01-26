@@ -1,23 +1,33 @@
 {
   "compilerOptions": {
     "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "moduleDetection": "force",
     "allowJs": true,
     "jsx": "react-jsx",
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
     
-    /* 별칭 설정의 정석 */
+    /* ⬇️ 이 부분이 핵심 수정 사항입니다 */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
-    }
-  },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
-  "exclude": ["node_modules"]
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
 }
