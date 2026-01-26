@@ -18,15 +18,11 @@
     "moduleDetection": "force",
     "allowJs": true,
     "jsx": "react-jsx",
-    
-    /* ⬇️ 이 부분이 핵심 수정 사항입니다 */
-    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
+        "./*"
       ]
     },
-    
     "allowImportingTsExtensions": true,
     "noEmit": true
   }
