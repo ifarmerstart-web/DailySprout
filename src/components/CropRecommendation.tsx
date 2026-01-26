@@ -25,7 +25,7 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
     if (type.includes('3월') || type === '초봄 (직파)') return '초봄 (직파)';
     if (type === '봄 (모종)') return '4월 초 (직파)';
     if (type.includes('4월 중순')) return '4월 중순';
-    if (type.includes('4월 말') || type.includes('4월 하순')) return '4월 말';
+    if (type.includes('4월 말') || type.includes('4월 말')) return '4월 말';
     if (type.includes('5월 초')) return '5월 초';
     return type;
   };
