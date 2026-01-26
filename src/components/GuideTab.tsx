@@ -544,7 +544,7 @@ const PESTS: PestInfo[] = [
         </div>
       </div>
     )
-  }
+  },
   { 
     name: '메뚜기', 
     season: '7~10월', 
@@ -638,7 +638,7 @@ const PESTS: PestInfo[] = [
         </div>
       </div>
     )
-  },
+  }
 ];
 
 type ActiveItemType = 
