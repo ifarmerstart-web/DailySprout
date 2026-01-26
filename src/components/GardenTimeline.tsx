@@ -481,6 +481,56 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                   </div>
                 </div>
               )}
+              {/* 3. 재배 적정 온도 섹션 바로 아래에 추가하세요 */}
+
+              {/* 4. 주요 관리 단계 (careSteps) */}
+              {currentCrop.careSteps && currentCrop.careSteps.length > 0 && (
+                <div className="p-5 bg-green-50/40 rounded-3xl border border-green-100/30">
+                  <h4 className="text-[10px] font-black text-green-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
+                    <span className="text-sm">📌</span> 주요 관리 단계
+                  </h4>
+                  <div className="space-y-2">
+                    {currentCrop.careSteps.map((step, idx) => (
+                      <div key={idx} className="flex gap-3 items-start">
+                        <span className="bg-green-100 text-green-700 text-[10px] font-black px-2 py-0.5 rounded-lg shrink-0">
+                          D+{step.daysAfter}
+                        </span>
+                        <div className="flex flex-col">
+                          <span className="text-[11px] font-black text-slate-800">{step.action}</span>
+                          <span className="text-[10px] font-bold text-slate-500 leading-tight">{step.description}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              {/* 5. 병해충 및 예방 가이드 (commonPests, preventionTip) */}
+              {(currentCrop.commonPests || currentCrop.preventionTip) && (
+                <div className="p-5 bg-red-50/40 rounded-3xl border border-red-100/30">
+                  <h4 className="text-[10px] font-black text-red-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
+                    <span className="text-sm">🐛</span> 병해충 및 예방 가이드
+                  </h4>
+                  <div className="space-y-3">
+                    {currentCrop.commonPests && (
+                      <div className="flex flex-wrap gap-1.5">
+                        {currentCrop.commonPests.map((pest, idx) => (
+                          <span key={idx} className="bg-white border border-red-100 text-red-600 text-[10px] font-black px-2 py-0.5 rounded-full shadow-sm">
+                            {pest}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    {currentCrop.preventionTip && (
+                      <div className="pt-2 border-t border-red-100/50">
+                        <span className="text-[10px] font-bold text-red-800 leading-tight block">
+                          💡 {currentCrop.preventionTip}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
 
               <div className="space-y-1.5 px-1 pt-2">
                 <label className="text-[9px] font-black text-slate-400 uppercase tracking-widest pl-1">심은 날짜 수정</label>
