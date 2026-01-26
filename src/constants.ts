@@ -911,5 +911,106 @@ export const MASTER_CROPS: MasterCrop[] = [
     ],
     commonPests: ['진딧물', '붉은곰팡이병'],
     preventionTip: '습해에 약하므로 배수가 가장 중요합니다.'
+  },
+    // --- 추가 다년생 작물 ---
+  {
+    id: 'butterbur',
+    name: '머위',
+    type: '다년생',
+    method: PlantingMethod.SEEDLING,
+    isPerennial: true,
+    basePlantMonth: 4,
+    basePlantDay: 10,
+    growthDays: 60,
+    image: 'https://images.unsplash.com/photo-1628543102431-7e8e50529d38?auto=format&fit=crop&q=80&w=400',
+    description: '그늘지고 습한 곳에서 잘 자라는 다년생 나물입니다. 잎과 줄기를 모두 식용합니다.',
+    harvestCycle: '봄부터 초여름까지 수시로',
+    fertilizerTip: '봄철 싹이 올라올 때 유기질 비료를 충분히 주면 잎이 크고 연해집니다.',
+    careSteps: [{ daysAfter: 30, action: '수분 관리', description: '건조하지 않게 물을 넉넉히 줍니다.' }],
+    tempInfo: {
+      germination: '15~20 °C',
+      growth: '15~23 °C',
+      characteristic: '반그늘을 선호하며 더위에 약함'
+    }
+  },
+  {
+    id: 'angelica',
+    name: '당귀',
+    type: '다년생',
+    method: PlantingMethod.SEEDLING,
+    isPerennial: true,
+    basePlantMonth: 4,
+    basePlantDay: 15,
+    growthDays: 70,
+    image: 'https://images.unsplash.com/photo-1606041008023-472dfb5e530f?auto=format&fit=crop&q=80&w=400',
+    description: '특유의 향이 강한 약용 및 식용 작물입니다. 서늘한 기후를 좋아합니다.',
+    harvestCycle: '연한 잎을 골라 수시로 수확',
+    fertilizerTip: '밑거름을 충분히 하고 수확 후 액비를 연하게 주면 성장이 빠릅니다.',
+    careSteps: [{ daysAfter: 45, action: '꽃대 제거', description: '잎 수확이 목적이라면 꽃대를 잘라 영양 손실을 막습니다.' }],
+    tempInfo: {
+      germination: '20 °C 내외',
+      growth: '15~25 °C',
+      characteristic: '고온 다습한 여름철 통풍에 주의하세요'
+    }
+  },
+  {
+    id: 'korean_mint',
+    name: '방아 (배초향)',
+    type: '다년생',
+    method: PlantingMethod.SEEDLING,
+    isPerennial: true,
+    basePlantMonth: 4,
+    basePlantDay: 20,
+    growthDays: 60,
+    image: 'https://images.unsplash.com/photo-1589121817094-9988151536b3?auto=format&fit=crop&q=80&w=400',
+    description: '한국의 허브라 불리는 향신 채소입니다. 생명력이 매우 강하고 번식이 잘 됩니다.',
+    harvestCycle: '수확 후 2~3주면 다시 무성해짐',
+    fertilizerTip: '수확 후 질소질 비료를 조금씩 주면 계속해서 연한 잎을 얻을 수 있습니다.',
+    careSteps: [{ daysAfter: 50, action: '순 지르기', description: '생장점을 잘라주면 옆가지가 많이 나와 수확량이 늘어납니다.' }],
+    tempInfo: {
+      germination: '20~25 °C',
+      growth: '20~30 °C',
+      characteristic: '햇빛을 좋아하며 추위에도 비교적 강함'
+    }
+  },
+  {
+    id: 'gondre',
+    name: '곤드레 (고려엉겅퀴)',
+    type: '다년생',
+    method: PlantingMethod.SEEDLING,
+    isPerennial: true,
+    basePlantMonth: 4,
+    basePlantDay: 5,
+    growthDays: 60,
+    image: 'https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&q=80&w=400',
+    description: '나물밥으로 유명한 작물입니다. 한 번 심으면 수년간 수확이 가능합니다.',
+    harvestCycle: '봄철 연한 잎을 2~3회 수확',
+    fertilizerTip: '매년 봄 싹이 트기 전 퇴비를 두둑하게 올려주면 세력이 좋아집니다.',
+    careSteps: [{ daysAfter: 40, action: '멀칭 관리', description: '풀 관리를 위해 짚이나 풀로 덮어주면 좋습니다.' }],
+    tempInfo: {
+      germination: '18~22 °C',
+      growth: '15~25 °C',
+      characteristic: '배수가 잘 되는 사질양토를 선호함'
+    }
+  },
+  {
+    id: 'jerusalem_artichoke',
+    name: '돼지감자 (뚱딴지)',
+    type: '다년생',
+    method: PlantingMethod.SEED,
+    isPerennial: true,
+    basePlantMonth: 3,
+    basePlantDay: 25,
+    growthDays: 180,
+    image: 'https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?auto=format&fit=crop&q=80&w=400',
+    description: '이눌린 성분이 풍부한 건강 작물입니다. 번식력이 매우 강해 경계 관리가 필요합니다.',
+    harvestCycle: '서리 내린 후 가을부터 이듬해 봄까지',
+    fertilizerTip: '척박한 땅에서도 잘 자라 비료를 많이 줄 필요는 없으나 밑거름은 도움이 됩니다.',
+    careSteps: [{ daysAfter: 100, action: '키 조절', description: '너무 높게 자라면 장마철에 쓰러지므로 윗부분을 잘라줍니다.' }],
+    tempInfo: {
+      germination: '10~15 °C',
+      growth: '15~25 °C',
+      characteristic: '영하의 기온에서도 땅속에서 잘 견딤'
+    }
   }
 ];
