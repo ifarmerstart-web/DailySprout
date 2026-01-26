@@ -545,7 +545,7 @@ const PESTS: PestInfo[] = [
       </div>
     )
   }
-    { 
+  { 
     name: '메뚜기', 
     season: '7~10월', 
     desc: '잎을 무섭게 갉아먹어 구멍을 냅니다. 이동성이 좋아 방제가 까다롭습니다.', 
@@ -638,7 +638,7 @@ const PESTS: PestInfo[] = [
         </div>
       </div>
     )
-  }
+  },
 ];
 
 type ActiveItemType = 
