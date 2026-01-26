@@ -1,4 +1,4 @@
-
+// 작물추가하기 전 목록 화면
 import React, { useState, useMemo, useEffect } from 'react';
 import { MasterCrop, RegionType, PlantingMethod } from '../types';
 import { MASTER_CROPS, REGION_OFFSETS } from '../constants';
