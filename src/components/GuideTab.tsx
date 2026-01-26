@@ -545,6 +545,100 @@ const PESTS: PestInfo[] = [
       </div>
     )
   }
+    { 
+    name: '메뚜기', 
+    season: '7~10월', 
+    desc: '잎을 무섭게 갉아먹어 구멍을 냅니다. 이동성이 좋아 방제가 까다롭습니다.', 
+    image: 'https://images.unsplash.com/photo-1596431969060-6477b752989c?auto=format&fit=crop&q=60&w=300',
+    details: (
+      <div className="space-y-6">
+        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+          여름철부터 가을까지 활동하는 메뚜기는 뛰어난 도약력으로 밭 여기저기를 옮겨 다니며 잎을 식해합니다.
+        </p>
+
+        <section>
+          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+            [물리적/포획] 이른 아침 직접 포획
+          </h5>
+          <p className="text-xs text-slate-600 leading-relaxed">
+            기온이 낮은 이른 아침에는 메뚜기의 움직임이 둔해집니다.
+          </p>
+          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+            <li>• <strong>방법:</strong> 긴 장화나 장갑을 끼고 직접 잡아내거나 잠자리채 이용</li>
+            <li>• <strong>특징:</strong> 개체수가 적을 때 가장 확실하고 친환경적인 방법</li>
+          </ul>
+        </section>
+
+        <section>
+          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+            [기피/차단] 목초액 살포 및 한랭사
+          </h5>
+          <p className="text-xs text-slate-600 leading-relaxed">
+            메뚜기가 싫어하는 환경을 조성하여 접근을 막습니다.
+          </p>
+          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+            <li>• <strong>목초액:</strong> 특유의 탄내로 메뚜기의 접근을 억제 (200~500배 희석)</li>
+            <li>• <strong>한랭사:</strong> 어린 모종 시기에 한랭사를 씌우면 물리적 차단 가능</li>
+          </ul>
+        </section>
+
+        <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
+          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+            💡 <strong>팁:</strong> 메뚜기는 벼과 식물과 잡초를 좋아합니다. <strong>밭 주변의 풀깎기</strong>를 철저히 하면 메뚜기가 번식하고 숨을 곳이 사라집니다.
+          </p>
+        </div>
+      </div>
+    )
+  },
+  { 
+    name: '방아깨비', 
+    season: '8~10월', 
+    desc: '덩치가 커서 잎을 먹는 양이 많습니다. 벼과 식물의 잎을 선호합니다.', 
+    image: 'https://images.unsplash.com/photo-1534346501570-36657879f906?auto=format&fit=crop&q=60&w=300',
+    details: (
+      <div className="space-y-6">
+        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+          뒷다리를 잡으면 방아를 찧는 듯한 동작을 하는 방아깨비는 메뚜기목 중 가장 큰 해충에 속하며, 식해량이 상당합니다.
+        </p>
+
+        <section>
+          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+            [물리적/차단] 서식지 정비
+          </h5>
+          <p className="text-xs text-slate-600 leading-relaxed">
+            방아깨비는 긴 풀숲에 숨어 있다가 작물로 이동합니다.
+          </p>
+          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+            <li>• <strong>환경조성:</strong> 텃밭 주변 잡초를 짧게 깎아 노출되게 함</li>
+            <li>• <strong>포획:</strong> 덩치가 커서 눈에 잘 띄므로 보이는 즉시 제거</li>
+          </ul>
+        </section>
+
+        <section>
+          <h5 className="text-sm font-black text-red-700 mb-2 flex items-center gap-2">
+            <span className="bg-red-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+            [전문/방제] 약제 교차 살포
+          </h5>
+          <p className="text-xs text-slate-600 leading-relaxed">
+            피해가 심각하여 작물의 뼈대만 남을 경우 전용 약제를 사용합니다.
+          </p>
+          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+            <li>• <strong>약제선택:</strong> 메뚜기목 해충에 등록된 약제 사용</li>
+            <li>• <strong>주의:</strong> 수확 전 살포 금지 기간을 반드시 확인하세요.</li>
+          </ul>
+        </section>
+
+        <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
+          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+            💡 <strong>팁:</strong> 방아깨비는 한 번에 많은 알을 낳습니다. 가을철 수확 후 <strong>밭을 깊게 갈아주면</strong> 땅속의 알들이 지표면으로 노출되어 겨울 추위에 사멸하게 됩니다.
+          </p>
+        </div>
+      </div>
+    )
+  }
 ];
 
 type ActiveItemType = 
