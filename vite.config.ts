@@ -1,22 +1,22 @@
-// vite.config.ts
-import { defineConfig, loadEnv } from 'vite';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 
-export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
-
-  return {
-    base: '/DailySprout/', 
-    plugins: [react() /*], 
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, './src'),
-      },
+export default defineConfig({
+  // GitHub Pages 배포 경로 설정
+  base: '/DailySprout/', 
+  
+  plugins: [react()],
+  
+  resolve: {
+    alias: {
+      // '@' 별칭을 'src' 폴더로 연결
+      '@': path.resolve(__dirname, './src'),
     },
-    build: {
-      outDir: 'dist',
-      emptyOutDir: true,
-    },
-  };
+  },
+  
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
 });
