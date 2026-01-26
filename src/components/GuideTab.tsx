@@ -188,13 +188,61 @@ const FARMER_GUIDES: GuideContent[] = [
     emoji: "💧",
     color: "bg-cyan-50",
     details: (
-      <div className="space-y-4">
-        <p className="text-xs text-slate-600 leading-relaxed">물을 너무 자주 주는 것보다 '제때' 주는 것이 중요합니다.</p>
-        <ul className="text-[11px] text-slate-500 space-y-2 font-medium">
-          <li>• <strong>시간대:</strong> 가급적 해가 뜨기 전 아침 일찍 주는 것이 좋습니다.</li>
-          <li>• <strong>방법:</strong> 잎보다는 뿌리 근처 흙에 천천히 스며들게 줍니다.</li>
-          <li>• <strong>체크:</strong> 겉흙이 바짝 말랐을 때 한 번에 듬뿍 줍니다.</li>
-        </ul>
+      <div className="space-y-6">
+        <section>
+          <h5 className="text-sm font-black text-cyan-700 mb-2 flex items-center gap-2">
+            1. 골든 타임을 지키세요 (언제?)
+          </h5>
+          <p className="text-xs text-slate-600 leading-relaxed font-bold mb-1">추천 시간: 오전 7시 ~ 9시 사이</p>
+          <p className="text-[11px] text-slate-500 leading-relaxed mb-2">
+            광합성 시작 전 수분을 충분히 공급받을 수 있고, 밤새 차가워진 땅과 물의 온도 차가 적어 식물이 스트레스를 덜 받습니다.
+          </p>
+          <p className="text-xs text-red-600 leading-relaxed font-bold mb-1">피해야 할 시간: 한낮 (오후 12시~3시)</p>
+          <p className="text-[11px] text-slate-500 leading-relaxed">
+            잎에 맺힌 물방울이 돋보기 역할을 하여 잎이 타거나, 뜨거운 물에 뿌리가 삶아질 위험이 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h5 className="text-sm font-black text-cyan-700 mb-2 flex items-center gap-2">
+            2. '찔끔'보다 '듬뿍'이 낫습니다 (얼마나?)
+          </h5>
+          <p className="text-xs text-slate-600 leading-relaxed font-bold mb-1">원칙: 3~4일에 한 번씩 땅속 깊이</p>
+          <p className="text-[11px] text-slate-500 leading-relaxed mb-2">
+            겉흙만 적시면 뿌리가 지표면에만 머물러 가뭄에 취약해집니다. 깊이 스며들어야 뿌리도 수분을 찾아 깊게 뻗어 나갑니다.
+          </p>
+          <div className="p-3 bg-cyan-50/50 rounded-xl border border-cyan-100">
+            <p className="text-[10px] text-cyan-800 font-bold leading-relaxed">
+              🔍 <strong>체크법:</strong> 손가락을 한 마디 정도 찔러보았을 때 속흙까지 촉촉하다면 충분합니다.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h5 className="text-sm font-black text-cyan-700 mb-2 flex items-center gap-2">
+            3. 작물별 맞춤 물주기 (어디에?)
+          </h5>
+          <ul className="space-y-3">
+            <li className="text-[11px] text-slate-600 leading-relaxed">
+              <strong className="text-slate-800">잎채소 (상추, 시금치 등):</strong> 잎이 연하므로 부드럽게 전체에 골고루 뿌려주세요. 먼지가 닦이고 온도가 내려가 싱싱해집니다.
+            </li>
+            <li className="text-[11px] text-slate-600 leading-relaxed">
+              <strong className="text-slate-800">열매채소 (토마토, 고추 등):</strong> 잎보다는 <span className="text-cyan-700 font-black">뿌리 근처(흙)</span>에 직접 주세요. 꽃에 물이 닿으면 수분이 방해받거나 병해충이 생길 수 있습니다.
+            </li>
+            <li className="text-[11px] text-slate-600 leading-relaxed">
+              <strong className="text-slate-800">포도 (청수 포도 등):</strong> 개화기나 열매가 익을 때 수분 변화에 민감합니다. 배수 관리를 병행하며 세심하게 조절해야 합니다.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h5 className="text-sm font-black text-cyan-700 mb-2 flex items-center gap-2">
+            4. 멀칭(Mulching)으로 수분 사수하기
+          </h5>
+          <p className="text-[11px] text-slate-500 leading-relaxed">
+            짚, 풀, 또는 검은 비닐로 흙을 덮어주면 수분 증발을 막아 물주기 횟수를 줄여주고, 잡초 방지와 지온 유지에도 탁월합니다. 텃밭 전체가 힘들다면 작물 주변만이라도 멀칭하는 것을 추천합니다.
+          </p>
+        </section>
       </div>
     )
   },
