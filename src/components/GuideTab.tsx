@@ -157,7 +157,7 @@ const FARMER_GUIDES: GuideContent[] = [
 
         <section className="p-4 bg-red-50 rounded-2xl border border-red-100">
           <h5 className="text-[11px] font-black text-red-700 mb-2 flex items-center gap-2 uppercase tracking-tighter">
-            ⚠️ 비료 사용 시 주의사항 (비룡의 경고)
+            ⚠️ 비료 사용 시 주의사항 (비료의 경고)
           </h5>
           <ul className="space-y-2 text-[10px] text-slate-600 font-medium">
             <li className="flex gap-1.5">
