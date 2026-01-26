@@ -100,19 +100,35 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
             const events = getDayEvents(day);
             const isToday = new Date().getDate() === day && new Date().getMonth() === month && new Date().getFullYear() === year;
             
+            // 날짜 칸에 표시할 고유 작물 이름들 추출
+            const uniqueCropNames = Array.from(new Set(events.map(e => e.cropName)));
+
             return (
-              <div key={day} className="relative py-1 flex flex-col items-center">
+              <div key={day} className="relative py-1 flex flex-col items-center min-h-[52px]">
                 <span className={`text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full transition-colors ${isToday ? 'bg-green-600 text-white shadow-lg shadow-green-100' : 'text-slate-600'}`}>
                   {day}
                 </span>
-                <div className="flex flex-wrap justify-center gap-0.5 mt-1 px-1 h-2 overflow-hidden">
+                
+                {/* 기존 컬러 도트 (매우 작게) */}
+                <div className="flex flex-wrap justify-center gap-0.5 mt-0.5 px-1 h-1">
                   {events.map((e, idx) => (
                     <div 
                       key={`${e.cropId}-${idx}`} 
-                      className={`w-1 h-1 rounded-full ${getCropColor(e.cropId)}`}
-                      title={`${e.cropName}: ${e.action}`}
+                      className={`w-0.5 h-0.5 rounded-full ${getCropColor(e.cropId)}`}
                     />
                   ))}
+                </div>
+
+                {/* 추가된 작물 이름 텍스트 표기 */}
+                <div className="flex flex-col items-center w-full mt-0.5 px-0.5 overflow-hidden gap-[1px]">
+                  {uniqueCropNames.slice(0, 2).map((name, idx) => (
+                    <span key={idx} className="text-[7px] font-black text-slate-400 leading-none truncate w-full text-center">
+                      {name}
+                    </span>
+                  ))}
+                  {uniqueCropNames.length > 2 && (
+                    <span className="text-[6px] font-bold text-slate-300 leading-none">+ {uniqueCropNames.length - 2}</span>
+                  )}
                 </div>
               </div>
             );
