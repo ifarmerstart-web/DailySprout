@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
   return {
     base: '/DailySprout/', 
     // 2. 아래 plugins 안의 tsconfigPaths()를 삭제하세요!
-    plugins: [react() /* , tsconfigPaths() */], 
+    plugins: [react() /*], 
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
