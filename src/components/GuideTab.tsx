@@ -246,18 +246,51 @@ const FARMER_GUIDES: GuideContent[] = [
       </div>
     )
   },
-  {
-    title: "지주대 설치",
+{
+    title: "장마철 관리",
     emoji: "🎋",
     color: "bg-amber-50",
     details: (
-      <div className="space-y-4">
-        <p className="text-xs text-slate-600 leading-relaxed">고추, 토마토처럼 위로 자라는 작물은 지지대가 필수입니다.</p>
-        <ul className="text-[11px] text-slate-500 space-y-2 font-medium">
-          <li>• <strong>시기:</strong> 작물이 쓰러지기 전, 15~20cm 정도 자랐을 때 설치합니다.</li>
-          <li>• <strong>고정:</strong> 줄기가 굵어질 것을 고려해 '8자 모양'으로 여유 있게 묶어줍니다.</li>
-          <li>• <strong>깊이:</strong> 바람에 흔들리지 않게 땅속 깊이 박아주세요.</li>
-        </ul>
+      <div className="space-y-6">
+        <section>
+          <h5 className="text-sm font-black text-amber-700 mb-2">1. 지주대 설치 기초</h5>
+          <p className="text-xs text-slate-600 leading-relaxed">고추, 토마토처럼 위로 자라는 작물은 지지대가 필수입니다.</p>
+          <ul className="text-[11px] text-slate-500 space-y-2 font-medium mt-2">
+            <li>• <strong>시기:</strong> 작물이 쓰러지기 전, 15~20cm 정도 자랐을 때 설치합니다.</li>
+            <li>• <strong>고정:</strong> 줄기가 굵어질 것을 고려해 '8자 모양'으로 여유 있게 묶어줍니다.</li>
+            <li>• <strong>깊이:</strong> 바람에 흔들리지 않게 땅속 깊이 박아주세요.</li>
+          </ul>
+        </section>
+
+        <section className="pt-4 border-t border-amber-100">
+          <h5 className="text-sm font-black text-blue-700 mb-2">2. 장마철 배수 관리 (물 빠짐 통로 확보)</h5>
+          <p className="text-[11px] text-slate-600 leading-relaxed">
+            가장 중요한 것은 물이 고이지 않게 하는 것입니다.
+          </p>
+          <ul className="mt-2 space-y-2 text-[10px] text-slate-500">
+            <li>• <strong>배수로 정비:</strong> 장마 전 고랑을 깊게 파서 물이 정체되지 않고 흘러나갈 수 있게 길을 터주세요.</li>
+            <li>• <strong>두둑 높이기:</strong> 습해에 약한 작물은 흙을 높게 쌓아(두둑) 뿌리가 물에 잠기는 것을 방지합니다.</li>
+          </ul>
+        </section>
+
+        <section className="pt-4 border-t border-amber-100">
+          <h5 className="text-sm font-black text-red-700 mb-2">3. 병해충 예방 (곰팡이와의 전쟁)</h5>
+          <p className="text-[11px] text-slate-600 leading-relaxed">
+            비가 자주 오면 습도가 높아져 곰팡이병이 극성을 부립니다.
+          </p>
+          <ul className="mt-2 space-y-2 text-[10px] text-slate-500">
+            <li>• <strong>비 전/후 방제:</strong> 비가 오기 직전이나 그친 직후에 친환경 살균제를 살포하세요.</li>
+            <li>• <strong>통풍 확보:</strong> 아랫잎을 따주어 바람이 잘 통하게 하세요. 잎이 무성하면 습기가 갇혀 병이 생기기 쉽습니다.</li>
+          </ul>
+        </section>
+
+        <section className="pt-4 border-t border-amber-100">
+          <h5 className="text-sm font-black text-green-700 mb-2">4. 수확 시기 조절</h5>
+          <ul className="mt-2 space-y-2 text-[10px] text-slate-500">
+            <li>• <strong>미리 수확:</strong> 상추 같은 엽채류는 비를 맞으면 금방 녹습니다. 장마 전 미리 수확하세요.</li>
+            <li>• <strong>당도 관리:</strong> 비가 올 때는 열과 현상을 막기 위해 관수를 중단하고 배수에 집중하세요.</li>
+          </ul>
+        </section>
       </div>
     )
   }
