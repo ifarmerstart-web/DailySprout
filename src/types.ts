@@ -54,7 +54,7 @@ export interface UserGardenItem {
   alarmEnabled: boolean;
   isHarvested?: boolean;
   harvestedAt?: string;
-  customImage?: string; // 사용자가 직접 등록/수정한 이미지 (Base64)
+  customImage?: string; // 사용자가 직접 등록/수정한 이미지 사용하기 (Base64)
 }
 
 export interface GardenSchedule {
