@@ -68,7 +68,7 @@ const FARMER_GUIDES: GuideContent[] = [
       </div>
     )
   },
-  {
+   {
     title: "비료 주는 법",
     emoji: "🔋",
     color: "bg-blue-50",
@@ -108,22 +108,69 @@ const FARMER_GUIDES: GuideContent[] = [
           </div>
         </section>
 
+        <section className="space-y-4">
+          <h5 className="text-sm font-black text-slate-800 mb-1 flex items-center gap-2">
+            🌱 성분별 주요 비료 가이드
+          </h5>
+          
+          <div className="space-y-3">
+            <div className="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
+              <h6 className="text-[11px] font-black text-green-700 mb-1">1. 질소(N) 특화: "잎과 줄기를 쑥쑥"</h6>
+              <p className="text-[10px] text-slate-500 leading-relaxed mb-2">엽채류(상추, 시금치)나 성장 초기 단계 식물에게 필수적입니다.</p>
+              <ul className="space-y-2">
+                <li className="text-[10px] text-slate-600 leading-relaxed">
+                  <strong className="text-slate-800">요소 비료 (무기질):</strong> 대표적 질소 비료로 효과가 즉각적입니다. 단, 과하면 식물이 연약해질 수 있으니 정량을 지키세요.
+                </li>
+                <li className="text-[10px] text-slate-600 leading-relaxed">
+                  <strong className="text-slate-800">유박 비료 (유기질):</strong> 깻묵 등으로 만든 비료로 서서히 녹아나와 작물이 꾸준히 자라게 돕고 미생물을 활성화합니다.
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
+              <h6 className="text-[11px] font-black text-orange-700 mb-1">2. 인산(P) 특화: "뿌리 튼튼, 꽃/열매 풍성"</h6>
+              <p className="text-[10px] text-slate-500 leading-relaxed mb-2">뿌리 채소(고구마, 감자)나 과채류(토마토, 고추)의 결실기에 중요합니다.</p>
+              <ul className="space-y-2">
+                <li className="text-[10px] text-slate-600 leading-relaxed">
+                  <strong className="text-slate-800">용과린 (무기질):</strong> 토양 산성화를 막으며 뿌리 발달을 돕습니다. 특히 뿌리가 약할 때 효과가 탁월합니다.
+                </li>
+                <li className="text-[10px] text-slate-600 leading-relaxed">
+                  <strong className="text-slate-800">골분 (유기질):</strong> 동물 뼈 가루 비료로 꽃이 오래 피게 하고 열매의 당도를 높이는 데 유기농 재배에서 선호됩니다.
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
+              <h6 className="text-[11px] font-black text-blue-700 mb-1">3. 칼륨(K) 특화: "병해충에 강한 단단한 작물"</h6>
+              <p className="text-[10px] text-slate-500 leading-relaxed mb-2">가뭄과 추위에 견디는 힘을 길러주며 열매의 저장성을 높입니다.</p>
+              <ul className="space-y-2">
+                <li className="text-[10px] text-slate-600 leading-relaxed">
+                  <strong className="text-slate-800">염화가리 (무기질):</strong> 가성비가 좋으며 전분 형성을 도와 감자, 고구마 등 서류 작물의 크기를 키우는 데 쓰입니다.
+                </li>
+                <li className="text-[10px] text-slate-600 leading-relaxed">
+                  <strong className="text-slate-800">황산가리 (무기질):</strong> 가격은 높지만 맛, 향, 색깔 등 품질을 높입니다. 마늘, 양파, 과일 등 향미 작물에 추천합니다.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="p-4 bg-red-50 rounded-2xl border border-red-100">
           <h5 className="text-[11px] font-black text-red-700 mb-2 flex items-center gap-2 uppercase tracking-tighter">
-            ⚠️ 비료 사용 시 주의사항 (비료료의 경고)
+            ⚠️ 비료 사용 시 주의사항 (비룡의 경고)
           </h5>
           <ul className="space-y-2 text-[10px] text-slate-600 font-medium">
             <li className="flex gap-1.5">
               <span className="text-red-400 mt-0.5">•</span>
-              <span><strong>과유불급:</strong> 많이 준다고 잘 자라지 않습니다. 과하면 작물이 말라 죽을 수 있습니다.</span>
+              <span><strong>과유불급:</strong> 많이 준다고 잘 자라지 않습니다. 오히려 농작물이 말라 죽을 수 있습니다.</span>
             </li>
             <li className="flex gap-1.5">
               <span className="text-red-400 mt-0.5">•</span>
-              <span><strong>가스 피해 주의:</strong> 덜 부숙된 퇴비를 넣으면 가스가 발생해 뿌리가 썩습니다.</span>
+              <span><strong>가스 피해 주의:</strong> 덜 부숙된(덜 익은) 퇴비를 넣으면 가스가 발생해 뿌리가 썩습니다.</span>
             </li>
             <li className="flex gap-1.5">
               <span className="text-red-400 mt-0.5">•</span>
-              <span><strong>수분 공급:</strong> 비료를 준 후에는 물을 충분히 주어 성분이 잘 녹아들게 하세요.</span>
+              <span><strong>수분 공급:</strong> 비료를 준 후에는 물을 충분히 주어 비료 성분이 잘 녹아들게 해야 합니다.</span>
             </li>
           </ul>
         </section>
