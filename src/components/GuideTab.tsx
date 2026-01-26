@@ -553,9 +553,7 @@ const PESTS: PestInfo[] = [
     details: (
       <div className="space-y-6">
         <p className="text-xs text-slate-600 leading-relaxed font-medium">
-          여름철부터 가을까지 활동하는 메뚜기는 뛰어난 도약력으로 밭 여기저기를 옮겨 다니며 잎을 식해합니다.
-        </p>
-
+          여름철부터 가을까지 활동하는 메뚜기는 뛰어난 도약력으로 밭 여기저기를 옮겨 다니며 잎을 식해합니다.</p>
         <section>
           <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
             <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
