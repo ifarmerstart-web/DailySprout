@@ -98,7 +98,7 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
               <div className="flex-1 flex flex-col justify-between py-0.5">
                 <div>
                   <div className="flex justify-between items-start">
-                    <h3 className="font-bold text-slate-800 text-sm flex items-center gap-1.5">
+                    <h3 className="font-bold text-slate-800 text-lg flex items-center gap-1.5">
                       {crop.name}
                       {crop.isPerennial && <span className="text-[10px] text-green-600 bg-green-50 px-1 rounded">∞</span>}
                     </h3>
