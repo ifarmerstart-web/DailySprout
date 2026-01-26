@@ -1,22 +1,25 @@
 // vite.config.ts
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
-import { fileURLToPath } from 'url'; // 추가
 import path from 'path';
+// 1. 아래 줄을 삭제하세요!
+// import tsconfigPaths from 'vite-tsconfig-paths'; 
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url)); // 추가
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), '');
 
-export default defineConfig({
-  base: '/DailySprout/', 
-  plugins: [react()],
-  resolve: {
-    alias: [
-      // 이 방식으로 설정하면 조금 더 유연하게 경로를 잡습니다.
-      { find: '@', replacement: path.resolve(__dirname, 'src') }
-    ]
-  },
-  build: {
-    outDir: 'dist',
-    emptyOutDir: true,
-  }
+  return {
+    base: '/DailySprout/', 
+    // 2. 아래 plugins 안의 tsconfigPaths()를 삭제하세요!
+    plugins: [react() /* , tsconfigPaths() */], 
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+      },
+    },
+    build: {
+      outDir: 'dist',
+      emptyOutDir: true,
+    },
+  };
 });
