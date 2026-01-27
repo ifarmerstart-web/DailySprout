@@ -24,44 +24,44 @@ const FARMER_GUIDES: GuideContent[] = [
     details: (
       <div className="space-y-6">
         <section>
-          <h5 className="text-sm font-black text-orange-700 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-orange-700 mb-2 flex items-center gap-2">
             <span className="bg-orange-100 px-2 py-0.5 rounded text-[10px]">POINT 1</span>
             [토양 관리] 좋은 땅이 좋은 수확을 만든다
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed font-medium">
+          <p className="text-sm text-slate-600 leading-relaxed font-medium">
             씨앗을 심기 전, 작물이 뿌리내릴 환경을 조성하는 것이 농사의 80%입니다.
           </p>
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-slate-800 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-slate-800 mb-2 flex items-center gap-2">
             퇴비와 가스 빼기
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-sm text-slate-600 leading-relaxed">
             심기 최소 2주 전에 퇴비를 뿌리고 흙과 섞어주세요. 퇴비가 분해될 때 발생하는 가스는 어린뿌리를 태우고 해충(고자리파리 등)을 부릅니다.
           </p>
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-slate-800 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-slate-800 mb-2 flex items-center gap-2">
             배수와 통기성
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-sm text-slate-600 leading-relaxed">
             물이 고이면 뿌리가 썩습니다. 흙을 한 뼘 정도 높게 쌓아 <strong>두둑</strong>을 만들면 물 빠짐이 좋아지고 뿌리가 숨쉬기 편해집니다.
           </p>
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-slate-800 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-slate-800 mb-2 flex items-center gap-2">
             산도(pH) 조절
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-sm text-slate-600 leading-relaxed">
             대부분의 작물은 중성 토양을 좋아합니다. 산성비 등으로 산성화된 땅에는 석회(고토석회)를 뿌려 중화시켜 주는 것이 좋습니다.
           </p>
         </section>
 
         <div className="p-4 bg-orange-50/50 rounded-2xl border border-orange-100">
-          <p className="text-[11px] text-orange-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-orange-800 font-bold leading-relaxed">
             💡 <strong>팁:</strong> 손으로 흙을 꽉 쥐었을 때 덩어리가 지면서도 톡 건드리면 부서지는 정도의 수분감이 가장 이상적인 상태입니다.
           </p>
         </div>
