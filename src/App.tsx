@@ -6,6 +6,7 @@ import RegionSelector from '@/components/RegionSelector';
 import GardenTimeline from '@/components/GardenTimeline';
 import CropRecommendation from '@/components/CropRecommendation';
 import GuideTab from '@/components/GuideTab';
+import AdMobBanner from '@/AdMobBanner';
 
 const App: React.FC = () => {
   const [region, setRegion] = useState<RegionType | null>(() => {
@@ -241,6 +242,16 @@ const NavButton = ({ active, icon, label, onClick }: { active: boolean, icon: st
     <span className={`text-[12px] font-black uppercase tracking-tighter ${active ? 'text-green-700' : 'text-slate-400'}`}>
       {label}
     </span>
+  </button>
+);
+
+const RegionOption = ({ title, desc, active, onClick, color }: { title: string, desc: string, active: boolean, onClick: () => void, color: string }) => (
+  <button onClick={onClick} className={`w-full ${color} p-4 rounded-3xl border-2 transition-all flex justify-between items-center ${active ? 'border-green-500 ring-4 ring-green-50' : 'border-transparent opacity-60 hover:opacity-100'}`}>
+    <div className="text-left">
+      <span className="font-black text-slate-800 text-sm block">{title}</span>
+      <span className="text-[12px] text-slate-500 font-bold">{desc}</span>
+    </div>
+    {active && <span className="bg-green-500 text-white p-1 rounded-full">✓</span>}
   </button>
 );
 
