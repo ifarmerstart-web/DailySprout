@@ -134,15 +134,15 @@ const App: React.FC = () => {
             <div className="bg-white p-6 rounded-[32px] shadow-sm border border-green-100">
               <div className="p-4 bg-green-50/50 rounded-2xl border border-green-100 flex justify-between items-center">
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-bold text-green-700/60">현재 설정 지역</span>
+                  <span className="text-lg font-bold text-green-700/60">현재 설정 지역</span>
                   <button 
                     onClick={() => setIsRegionModalOpen(true)}
-                    className="text-[10px] font-black text-green-600 hover:text-green-700 transition-colors bg-orange-50/80 px-2 py-0.5 rounded-full active:scale-95"
+                    className="text-[12px] font-black text-green-600 hover:text-green-700 transition-colors bg-orange-50/80 px-2 py-0.5 rounded-full active:scale-95"
                   >
                     (변경)
                   </button>
                 </div>
-                <span className="text-sm font-black text-green-900 bg-white px-3 py-1 rounded-lg border border-green-100 shadow-sm">{region} 지방</span>
+                <span className="text-lg font-black text-green-900 bg-white px-3 py-1 rounded-lg border border-green-100 shadow-sm">{region} 지방</span>
               </div>
             </div>
             <GuideTab />
@@ -225,7 +225,7 @@ const RegionOption = ({ title, desc, active, onClick, color }: { title: string, 
   >
     <div className="text-left">
       <span className="font-black text-slate-800 text-sm block">{title}</span>
-      <span className="text-[10px] text-slate-500 font-bold">{desc}</span>
+      <span className="text-[12px] text-slate-500 font-bold">{desc}</span>
     </div>
     {active && <span className="bg-green-500 text-white p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg></span>}
   </button>
@@ -237,7 +237,7 @@ const NavButton = ({ active, icon, label, onClick }: { active: boolean, icon: st
     className={`flex flex-col items-center gap-1 transition-all ${active ? 'scale-110' : 'opacity-40 grayscale'}`}
   >
     <span className="text-xl">{icon}</span>
-    <span className={`text-[10px] font-black uppercase tracking-tighter ${active ? 'text-green-700' : 'text-slate-400'}`}>
+    <span className={`text-[12px] font-black uppercase tracking-tighter ${active ? 'text-green-700' : 'text-slate-400'}`}>
       {label}
     </span>
   </button>
