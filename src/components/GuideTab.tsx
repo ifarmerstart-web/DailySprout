@@ -75,11 +75,11 @@ const FARMER_GUIDES: GuideContent[] = [
     details: (
       <div className="space-y-6">
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-3 flex items-center gap-2">
+          <h5 className="text-lg font-black text-blue-700 mb-3 flex items-center gap-2">
             농사의 3대 요소 (N-P-K)
           </h5>
           <div className="overflow-hidden rounded-2xl border border-blue-100">
-            <table className="w-full text-[10px] text-left border-collapse">
+            <table className="w-full text-[12px] text-left border-collapse">
               <thead>
                 <tr className="bg-blue-100/50">
                   <th className="p-2 font-black text-blue-800 border-b border-blue-100">성분</th>
@@ -109,45 +109,45 @@ const FARMER_GUIDES: GuideContent[] = [
         </section>
 
         <section className="space-y-4">
-          <h5 className="text-sm font-black text-slate-800 mb-1 flex items-center gap-2">
+          <h5 className="text-lg font-black text-slate-800 mb-1 flex items-center gap-2">
             🌱 성분별 주요 비료 가이드
           </h5>
           
           <div className="space-y-3">
             <div className="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
-              <h6 className="text-[11px] font-black text-green-700 mb-1">1. 질소(N) 특화: "잎과 줄기를 쑥쑥"</h6>
-              <p className="text-[10px] text-slate-500 leading-relaxed mb-2">엽채류(상추, 시금치)나 성장 초기 단계 식물에게 필수적입니다.</p>
+              <h6 className="text-[12px] font-black text-green-700 mb-1">1. 질소(N) 특화: "잎과 줄기를 쑥쑥"</h6>
+              <p className="text-[12px] text-slate-500 leading-relaxed mb-2">엽채류(상추, 시금치)나 성장 초기 단계 식물에게 필수적입니다.</p>
               <ul className="space-y-2">
-                <li className="text-[10px] text-slate-600 leading-relaxed">
+                <li className="text-[12px] text-slate-600 leading-relaxed">
                   <strong className="text-slate-800">요소 비료 (무기질):</strong> 대표적 질소 비료로 효과가 즉각적입니다. 단, 과하면 식물이 연약해질 수 있으니 정량을 지키세요.
                 </li>
-                <li className="text-[10px] text-slate-600 leading-relaxed">
+                <li className="text-[12px] text-slate-600 leading-relaxed">
                   <strong className="text-slate-800">유박 비료 (유기질):</strong> 깻묵 등으로 만든 비료로 서서히 녹아나와 작물이 꾸준히 자라게 돕고 미생물을 활성화합니다.
                 </li>
               </ul>
             </div>
 
             <div className="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
-              <h6 className="text-[11px] font-black text-orange-700 mb-1">2. 인산(P) 특화: "뿌리 튼튼, 꽃/열매 풍성"</h6>
-              <p className="text-[10px] text-slate-500 leading-relaxed mb-2">뿌리 채소(고구마, 감자)나 과채류(토마토, 고추)의 결실기에 중요합니다.</p>
+              <h6 className="text-[12px] font-black text-orange-700 mb-1">2. 인산(P) 특화: "뿌리 튼튼, 꽃/열매 풍성"</h6>
+              <p className="text-[12px] text-slate-500 leading-relaxed mb-2">뿌리 채소(고구마, 감자)나 과채류(토마토, 고추)의 결실기에 중요합니다.</p>
               <ul className="space-y-2">
-                <li className="text-[10px] text-slate-600 leading-relaxed">
+                <li className="text-[12px] text-slate-600 leading-relaxed">
                   <strong className="text-slate-800">용과린 (무기질):</strong> 토양 산성화를 막으며 뿌리 발달을 돕습니다. 특히 뿌리가 약할 때 효과가 탁월합니다.
                 </li>
-                <li className="text-[10px] text-slate-600 leading-relaxed">
+                <li className="text-[12px] text-slate-600 leading-relaxed">
                   <strong className="text-slate-800">골분 (유기질):</strong> 동물 뼈 가루 비료로 꽃이 오래 피게 하고 열매의 당도를 높이는 데 유기농 재배에서 선호됩니다.
                 </li>
               </ul>
             </div>
 
             <div className="p-4 bg-white rounded-2xl border border-slate-100 shadow-sm">
-              <h6 className="text-[11px] font-black text-blue-700 mb-1">3. 칼륨(K) 특화: "병해충에 강한 단단한 작물"</h6>
-              <p className="text-[10px] text-slate-500 leading-relaxed mb-2">가뭄과 추위에 견디는 힘을 길러주며 열매의 저장성을 높입니다.</p>
+              <h6 className="text-[12px] font-black text-blue-700 mb-1">3. 칼륨(K) 특화: "병해충에 강한 단단한 작물"</h6>
+              <p className="text-[12px] text-slate-500 leading-relaxed mb-2">가뭄과 추위에 견디는 힘을 길러주며 열매의 저장성을 높입니다.</p>
               <ul className="space-y-2">
-                <li className="text-[10px] text-slate-600 leading-relaxed">
+                <li className="text-[12px] text-slate-600 leading-relaxed">
                   <strong className="text-slate-800">염화가리 (무기질):</strong> 가성비가 좋으며 전분 형성을 도와 감자, 고구마 등 서류 작물의 크기를 키우는 데 쓰입니다.
                 </li>
-                <li className="text-[10px] text-slate-600 leading-relaxed">
+                <li className="text-[12px] text-slate-600 leading-relaxed">
                   <strong className="text-slate-800">황산가리 (무기질):</strong> 가격은 높지만 맛, 향, 색깔 등 품질을 높입니다. 마늘, 양파, 과일 등 향미 작물에 추천합니다.
                 </li>
               </ul>
@@ -156,10 +156,10 @@ const FARMER_GUIDES: GuideContent[] = [
         </section>
 
         <section className="p-4 bg-red-50 rounded-2xl border border-red-100">
-          <h5 className="text-[11px] font-black text-red-700 mb-2 flex items-center gap-2 uppercase tracking-tighter">
+          <h5 className="text-[12px] font-black text-red-700 mb-2 flex items-center gap-2 uppercase tracking-tighter">
             ⚠️ 비료 사용 시 주의사항 (비료의 경고)
           </h5>
-          <ul className="space-y-2 text-[10px] text-slate-600 font-medium">
+          <ul className="space-y-2 text-[12px] text-slate-600 font-medium">
             <li className="flex gap-1.5">
               <span className="text-red-400 mt-0.5">•</span>
               <span><strong>과유불급:</strong> 많이 준다고 잘 자라지 않습니다. 오히려 농작물이 말라 죽을 수 있습니다.</span>
@@ -176,7 +176,7 @@ const FARMER_GUIDES: GuideContent[] = [
         </section>
 
         <div className="p-4 bg-blue-50/50 rounded-2xl border border-blue-100">
-          <p className="text-[10px] text-blue-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-blue-800 font-bold leading-relaxed">
             💡 <strong>기본 원칙:</strong> 밑거름은 심기 전 흙에 섞고, 웃거름은 뿌리에서 조금 떨어진 곳에 주어 비료 장애를 예방하세요.
           </p>
         </div>
@@ -190,56 +190,56 @@ const FARMER_GUIDES: GuideContent[] = [
     details: (
       <div className="space-y-6">
         <section>
-          <h5 className="text-sm font-black text-cyan-700 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-cyan-700 mb-2 flex items-center gap-2">
             1. 골든 타임을 지키세요 (언제?)
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed font-bold mb-1">추천 시간: 오전 7시 ~ 9시 사이</p>
-          <p className="text-[11px] text-slate-500 leading-relaxed mb-2">
+          <p className="text-lg text-slate-600 leading-relaxed font-bold mb-1">추천 시간: 오전 7시 ~ 9시 사이</p>
+          <p className="text-[12px] text-slate-500 leading-relaxed mb-2">
             광합성 시작 전 수분을 충분히 공급받을 수 있고, 밤새 차가워진 땅과 물의 온도 차가 적어 식물이 스트레스를 덜 받습니다.
           </p>
-          <p className="text-xs text-red-600 leading-relaxed font-bold mb-1">피해야 할 시간: 한낮 (오후 12시~3시)</p>
-          <p className="text-[11px] text-slate-500 leading-relaxed">
+          <p className="text-lg text-red-600 leading-relaxed font-bold mb-1">피해야 할 시간: 한낮 (오후 12시~3시)</p>
+          <p className="text-[12px] text-slate-500 leading-relaxed">
             잎에 맺힌 물방울이 돋보기 역할을 하여 잎이 타거나, 뜨거운 물에 뿌리가 삶아질 위험이 있습니다.
           </p>
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-cyan-700 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-cyan-700 mb-2 flex items-center gap-2">
             2. '찔끔'보다 '듬뿍'이 낫습니다 (얼마나?)
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed font-bold mb-1">원칙: 3~4일에 한 번씩 땅속 깊이</p>
-          <p className="text-[11px] text-slate-500 leading-relaxed mb-2">
+          <p className="text-lg text-slate-600 leading-relaxed font-bold mb-1">원칙: 3~4일에 한 번씩 땅속 깊이</p>
+          <p className="text-[12px] text-slate-500 leading-relaxed mb-2">
             겉흙만 적시면 뿌리가 지표면에만 머물러 가뭄에 취약해집니다. 깊이 스며들어야 뿌리도 수분을 찾아 깊게 뻗어 나갑니다.
           </p>
           <div className="p-3 bg-cyan-50/50 rounded-xl border border-cyan-100">
-            <p className="text-[10px] text-cyan-800 font-bold leading-relaxed">
+            <p className="text-[12px] text-cyan-800 font-bold leading-relaxed">
               🔍 <strong>체크법:</strong> 손가락을 한 마디 정도 찔러보았을 때 속흙까지 촉촉하다면 충분합니다.
             </p>
           </div>
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-cyan-700 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-cyan-700 mb-2 flex items-center gap-2">
             3. 작물별 맞춤 물주기 (어디에?)
           </h5>
           <ul className="space-y-3">
-            <li className="text-[11px] text-slate-600 leading-relaxed">
+            <li className="text-[12px] text-slate-600 leading-relaxed">
               <strong className="text-slate-800">잎채소 (상추, 시금치 등):</strong> 잎이 연하므로 부드럽게 전체에 골고루 뿌려주세요. 먼지가 닦이고 온도가 내려가 싱싱해집니다.
             </li>
-            <li className="text-[11px] text-slate-600 leading-relaxed">
+            <li className="text-[12px] text-slate-600 leading-relaxed">
               <strong className="text-slate-800">열매채소 (토마토, 고추 등):</strong> 잎보다는 <span className="text-cyan-700 font-black">뿌리 근처(흙)</span>에 직접 주세요. 꽃에 물이 닿으면 수분이 방해받거나 병해충이 생길 수 있습니다.
             </li>
-            <li className="text-[11px] text-slate-600 leading-relaxed">
+            <li className="text-[12px] text-slate-600 leading-relaxed">
               <strong className="text-slate-800">포도 (청수 포도 등):</strong> 개화기나 열매가 익을 때 수분 변화에 민감합니다. 배수 관리를 병행하며 세심하게 조절해야 합니다.
             </li>
           </ul>
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-cyan-700 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-cyan-700 mb-2 flex items-center gap-2">
             4. 멀칭(Mulching)으로 수분 사수하기
           </h5>
-          <p className="text-[11px] text-slate-500 leading-relaxed">
+          <p className="text-[12px] text-slate-500 leading-relaxed">
             짚, 풀, 또는 검은 비닐로 흙을 덮어주면 수분 증발을 막아 물주기 횟수를 줄여주고, 잡초 방지와 지온 유지에도 탁월합니다. 텃밭 전체가 힘들다면 작물 주변만이라도 멀칭하는 것을 추천합니다.
           </p>
         </section>
@@ -253,9 +253,9 @@ const FARMER_GUIDES: GuideContent[] = [
     details: (
       <div className="space-y-6">
         <section>
-          <h5 className="text-sm font-black text-amber-700 mb-2">1. 지주대 설치 기초</h5>
-          <p className="text-xs text-slate-600 leading-relaxed">고추, 토마토처럼 위로 자라는 작물은 지지대가 필수입니다.</p>
-          <ul className="text-[11px] text-slate-500 space-y-2 font-medium mt-2">
+          <h5 className="text-lg font-black text-amber-700 mb-2">1. 지주대 설치 기초</h5>
+          <p className="text-lg text-slate-600 leading-relaxed">고추, 토마토처럼 위로 자라는 작물은 지지대가 필수입니다.</p>
+          <ul className="text-[12px] text-slate-500 space-y-2 font-medium mt-2">
             <li>• <strong>시기:</strong> 작물이 쓰러지기 전, 15~20cm 정도 자랐을 때 설치합니다.</li>
             <li>• <strong>고정:</strong> 줄기가 굵어질 것을 고려해 '8자 모양'으로 여유 있게 묶어줍니다.</li>
             <li>• <strong>깊이:</strong> 바람에 흔들리지 않게 땅속 깊이 박아주세요.</li>
@@ -263,8 +263,8 @@ const FARMER_GUIDES: GuideContent[] = [
         </section>
 
         <section className="pt-4 border-t border-amber-100">
-          <h5 className="text-sm font-black text-blue-700 mb-2">2. 장마철 배수 관리 (물 빠짐 통로 확보)</h5>
-          <p className="text-[11px] text-slate-600 leading-relaxed">
+          <h5 className="text-lg font-black text-blue-700 mb-2">2. 장마철 배수 관리 (물 빠짐 통로 확보)</h5>
+          <p className="text-[12px] text-slate-600 leading-relaxed">
             가장 중요한 것은 물이 고이지 않게 하는 것입니다.
           </p>
           <ul className="mt-2 space-y-2 text-[10px] text-slate-500">
@@ -274,19 +274,19 @@ const FARMER_GUIDES: GuideContent[] = [
         </section>
 
         <section className="pt-4 border-t border-amber-100">
-          <h5 className="text-sm font-black text-red-700 mb-2">3. 병해충 예방 (곰팡이와의 전쟁)</h5>
-          <p className="text-[11px] text-slate-600 leading-relaxed">
+          <h5 className="text-lg font-black text-red-700 mb-2">3. 병해충 예방 (곰팡이와의 전쟁)</h5>
+          <p className="text-[12px] text-slate-600 leading-relaxed">
             비가 자주 오면 습도가 높아져 곰팡이병이 극성을 부립니다.
           </p>
-          <ul className="mt-2 space-y-2 text-[10px] text-slate-500">
+          <ul className="mt-2 space-y-2 text-[12px] text-slate-500">
             <li>• <strong>비 전/후 방제:</strong> 비가 오기 직전이나 그친 직후에 친환경 살균제를 살포하세요.</li>
             <li>• <strong>통풍 확보:</strong> 아랫잎을 따주어 바람이 잘 통하게 하세요. 잎이 무성하면 습기가 갇혀 병이 생기기 쉽습니다.</li>
           </ul>
         </section>
 
         <section className="pt-4 border-t border-amber-100">
-          <h5 className="text-sm font-black text-green-700 mb-2">4. 수확 시기 조절</h5>
-          <ul className="mt-2 space-y-2 text-[10px] text-slate-500">
+          <h5 className="text-lg font-black text-green-700 mb-2">4. 수확 시기 조절</h5>
+          <ul className="mt-2 space-y-2 text-[12px] text-slate-500">
             <li>• <strong>미리 수확:</strong> 상추 같은 엽채류는 비를 맞으면 금방 녹습니다. 장마 전 미리 수확하세요.</li>
             <li>• <strong>당도 관리:</strong> 비가 올 때는 열과 현상을 막기 위해 관수를 중단하고 배수에 집중하세요.</li>
           </ul>
@@ -305,14 +305,14 @@ const PESTS: PestInfo[] = [
     details: (
       <div className="space-y-6">
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
             <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
             [친환경] 마요네즈 희석액
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             가장 구하기 쉬운 재료로 진딧물의 숨구멍을 막아 질식시키는 원리입니다.
           </p>
-          <ul className="mt-2 space-y-1 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 물 500ml + 마요네즈 1~2스푼(약 5g) 혼합</li>
             <li>• <strong>살포:</strong> 잎의 앞뒷면에 골고루 분사</li>
             <li>• <strong>주의:</strong> 며칠 뒤 깨끗한 물로 씻어주면 식물 호흡에 도움</li>
@@ -320,14 +320,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
+          <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
             <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
             [고효율] 니코틴 및 알코올 요법
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             진딧물의 신경계를 마비시키거나 외피를 손상시켜 강력한 살충 효과를 냅니다.
           </p>
-          <ul className="mt-2 space-y-1 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1 text-[12px] text-slate-500 font-medium">
             <li>• <strong>담배우린물:</strong> 담배꽁초 2~3개를 반나절 우린 물 살포</li>
             <li>• <strong>소주/알코올:</strong> 소주와 물을 1:2 비율로 혼합 살포</li>
             <li>• <strong>장점:</strong> 친환경 방식보다 효과가 빠르고 확실함</li>
@@ -335,14 +335,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-red-700 mb-2 flex items-center gap-2">
-            <span className="bg-red-100 px-2 py-0.5 rounded text-[10px]">STEP 3</span>
+          <h5 className="text-lg font-black text-red-700 mb-2 flex items-center gap-2">
+            <span className="bg-red-100 px-2 py-0.5 rounded text-[12px]">STEP 3</span>
             [전문적] 농약 및 식물 추출 천연 살충제
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             가정용 화분 수준을 넘어 번식이 심할 때 사용하는 확실한 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1 text-[12px] text-slate-500 font-medium">
             <li>• <strong>친환경 살충제:</strong> 제라늄 추출물이나 '님오일' 성분 구매</li>
             <li>• <strong>침투이행성 약제:</strong> '코니도' 등 식물이 약을 흡수하게 함</li>
             <li>• <strong>장점:</strong> 한 번의 살포로 장기간 예방 효과 기대</li>
@@ -350,7 +350,7 @@ const PESTS: PestInfo[] = [
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>꿀팁:</strong> 싹이 막 올라온 식물에 진딧물이 생겼다면, 우선 테이프(찍찍이)로 눈에 보이는 진딧물을 가볍게 찍어내어 개체 수를 줄인 뒤 위의 방법을 적용하면 훨씬 효과적입니다.
           </p>
         </div>
