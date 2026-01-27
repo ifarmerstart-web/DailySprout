@@ -1024,12 +1024,12 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantDay: 5,
     growthDays: 60,
     image: 'https://images.unsplash.com/photo-1626078299034-9c3f5899477e?auto=format&fit=crop&q=80&w=400',
-    description: '번식력이 매우 강하고 상쾌한 향이 특징입니다. 반그늘에서도 잘 자랍니다.',
+    description: '번식력이 매우 강하고 상쾌한 향이 특징입니다. 반그늘에서도 잘 자라며 노지 월동이 가능합니다.',
     harvestCycle: '잎이 풍성해지면 수시로 줄기 끝 수확',
     fertilizerTip: '봄철 싹이 올라올 때 유기질 비료를 주면 잎의 향이 깊어집니다.',
     careSteps: [{ daysAfter: 30, action: '순지르기', description: '생장점을 잘라 곁가지를 유도합니다.' }],
     tempInfo: {
-      germination: '10~15 °C',
+      germination: '20~25 °C',
       growth: '15~25 °C',
       characteristic: '질소 부족 시 잎 색이 연해지고 줄기가 가늘어집니다.'
     }
@@ -1044,12 +1044,12 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantDay: 10,
     growthDays: 60,
     image: 'https://images.unsplash.com/photo-1596701062351-be5f6a210417?auto=format&fit=crop&q=80&w=400',
-    description: '사과 향이 나는 허브로 생명력이 강합니다. 지하경으로 빠르게 번식합니다.',
+    description: '사과 향이 나는 허브로 생명력이 강합니다. 지하경으로 빠르게 번식하며 노지 월동이 가능합니다.',
     harvestCycle: '수확할수록 더 풍성해집니다.',
     fertilizerTip: '수확 후 액비를 조금씩 주면 계속해서 연한 잎이 나옵니다.',
     careSteps: [{ daysAfter: 40, action: '포기나누기', description: '번식이 심하면 화분이나 구역을 나눠줍니다.' }],
     tempInfo: {
-      germination: '10~15 °C',
+      germination: '20~25 °C',
       growth: '15~25 °C',
       characteristic: '마그네슘 부족 시 잎맥 사이가 노랗게 변할 수 있습니다.'
     }
@@ -1070,7 +1070,7 @@ export const MASTER_CROPS: MasterCrop[] = [
     fertilizerTip: '척박한 땅에서도 잘 자라며, 과한 비료는 오히려 성장에 해롭습니다.',
     careSteps: [{ daysAfter: 60, action: '전지(가지치기)', description: '꽃이 진 후 모양을 잡아주며 잘라줍니다.' }],
     tempInfo: {
-      germination: '10~15 °C',
+      germination: '18~22 °C',
       growth: '15~25 °C',
       characteristic: '칼륨 부족 시 잎 끝이 갈색으로 마를 수 있습니다.'
     }
@@ -1085,13 +1085,13 @@ export const MASTER_CROPS: MasterCrop[] = [
     basePlantDay: 20,
     growthDays: 70,
     image: 'https://images.unsplash.com/photo-1628543102431-7e8e50529d38?auto=format&fit=crop&q=80&w=400',
-    description: '향이 백 리까지 간다는 다년생 허브입니다. 낮게 기어 자라는 습성이 있습니다.',
+    description: '과습과 고온을 주의해야 합니다. 낮게 기어 자라는 습성이 있습니다.',
     harvestCycle: '이른 아침에 향이 가장 강할 때 수확',
     fertilizerTip: '이른 봄 유기질 퇴비를 조금 주는 것으로 충분합니다.',
     careSteps: [{ daysAfter: 45, action: '통풍 전지', description: '안쪽의 밀집된 줄기를 솎아줍니다.' }],
     tempInfo: {
-      germination: '10~15 °C',
-      growth: '15~25 °C',
+      germination: '20 °C 내외',
+      growth: '15~20 °C',
       characteristic: '인산 부족 시 성장이 눈에 띄게 느려지고 잎 색이 어두워집니다.'
     }
   },
@@ -1111,8 +1111,8 @@ export const MASTER_CROPS: MasterCrop[] = [
     fertilizerTip: '잎을 계속 수확하므로 2주 간격으로 연한 액비를 주면 좋습니다.',
     careSteps: [{ daysAfter: 20, action: '꽃대 제거', description: '꽃이 피기 시작하면 맛이 떨어지므로 즉시 잘라줍니다.' }],
     tempInfo: {
-      germination: '10~15 °C',
-      growth: '15~25 °C',
+      germination: '20~25 °C',
+      growth: '20~30 °C',
       characteristic: '질소가 부족하면 잎이 얇아지고 노랗게 변합니다.'
     }
   }
