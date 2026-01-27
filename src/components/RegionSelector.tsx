@@ -46,7 +46,7 @@ const RegionSelector: React.FC<RegionSelectorProps> = ({ onSelect }) => {
       </div>
       
       <div className="mt-12 p-4 bg-white/50 rounded-xl border border-slate-100">
-        <p className="text-[10px] text-slate-400 text-center font-medium leading-relaxed">
+        <p className="text-[12px] text-slate-400 text-center font-medium leading-relaxed">
           * 4월 상순~5월 상순 실외 재배 가이드를 따릅니다.<br/>
           * 기상 이변에 따라 실제 환경은 다를 수 있습니다.
           *AI 기반 자료로 구성되어 오류가 있을 수 있습니다.
@@ -72,7 +72,7 @@ const RegionButton: React.FC<{
       <span className="font-bold text-lg text-slate-800 group-hover:text-slate-900">{title}</span>
       <span className="bg-white/80 text-slate-500 px-2.5 py-1 rounded-full text-[9px] font-black uppercase tracking-wider">{badge}</span>
     </div>
-    <span className="text-xs text-slate-500 font-medium">{desc}</span>
+    <span className="text-lg text-slate-500 font-medium">{desc}</span>
   </button>
 );
 
