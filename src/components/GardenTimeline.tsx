@@ -416,7 +416,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                   </p>
                   
                   {isEarlyWarning && (
-                    <div className="mt-2 p-1.5 bg-amber-50 border border-amber-200 rounded-2xl animate-in fade-in zoom-in-95 duration-500">
+                    <div className="mt-2 p-1 bg-amber-50 border border-amber-200 rounded-2xl animate-in fade-in zoom-in-95 duration-500">
                       <div className="flex items-center justify-center gap-1 mb-1">
                         <span className="text-lg">⚠️</span>
                         <span className="text-[12px] font-black text-amber-700 tracking-tight">권장 시기보다 일찍 심었습니다</span>
@@ -496,8 +496,8 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                           D+{step.daysAfter}
                         </span>
                         <div className="flex flex-col">
-                          <span className="text-[11px] font-black text-slate-800">{step.action}</span>
-                          <span className="text-[10px] font-bold text-slate-500 leading-tight">{step.description}</span>
+                          <span className="text-[14px] font-black text-slate-800">{step.action}</span>
+                          <span className="text-[12px] font-bold text-slate-500 leading-tight">{step.description}</span>
                         </div>
                       </div>
                     ))}
@@ -523,7 +523,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                     )}
                     {currentCrop.preventionTip && (
                       <div className="pt-2 border-t border-red-100/50">
-                        <span className="text-[10px] font-bold text-red-800 leading-tight block">
+                        <span className="text-[12px] font-bold text-red-800 leading-tight block">
                           💡 {currentCrop.preventionTip}
                         </span>
                       </div>
@@ -533,7 +533,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               )}
 
               <div className="space-y-1.5 px-1 pt-2">
-                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">심은 날짜 수정</label>
+                <label className="text-[12px] font-black text-slate-600 uppercase tracking-widest pl-1">심은 날짜 수정</label>
                 <input 
                   type="date"
                   defaultValue={new Date(selectedItem.plantDate).toISOString().split('T')[0]}
