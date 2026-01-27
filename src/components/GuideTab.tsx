@@ -301,7 +301,7 @@ const PESTS: PestInfo[] = [
     name: '진딧물', 
     season: '5~6월', 
     desc: '잎 뒷면에 붙어 즙액을 빨아먹어 식물을 고사시킵니다.', 
-//    image: 'https://images.unsplash.com/photo-1621250370601-576403f0b263?auto=format&fit=crop&q=80&w=300',
+    image: 'https://images.unsplash.com/photo-1621250370601-576403f0b263?auto=format&fit=crop&q=80&w=300',
     details: (
       <div className="space-y-6">
         <section>
