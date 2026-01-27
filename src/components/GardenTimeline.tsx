@@ -122,12 +122,12 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                 {/* 추가된 작물 이름 텍스트 표기 */}
                 <div className="flex flex-col items-center w-full mt-0.5 px-0.5 overflow-hidden gap-[1px]">
                   {uniqueCropNames.slice(0, 2).map((name, idx) => (
-                    <span key={idx} className="text-[7px] font-black text-slate-400 leading-none truncate w-full text-center">
+                    <span key={idx} className="text-[8px] font-black text-slate-400 leading-none truncate w-full text-center">
                       {name}
                     </span>
                   ))}
                   {uniqueCropNames.length > 2 && (
-                    <span className="text-[6px] font-bold text-slate-300 leading-none">+ {uniqueCropNames.length - 2}</span>
+                    <span className="text-[8px] font-bold text-slate-300 leading-none">+ {uniqueCropNames.length - 2}</span>
                   )}
                 </div>
               </div>
@@ -283,7 +283,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                                 {isTooEarly && !item.isHarvested && <span className="text-amber-500 text-xs">⚠️</span>}
                               </h3>
                             </div>
-                            <p className="text-[10px] font-bold text-slate-400 mt-0.5 uppercase tracking-wider truncate">
+                            <p className="text-[12px] font-bold text-slate-400 mt-0.5 uppercase tracking-wider truncate">
                               {crop.isPerennial 
                                 ? calculateYears(item.plantDate) 
                                 : `${schedule.harvestDate.toLocaleDateString('ko-KR', { year: 'numeric', month: '2-digit', day: '2-digit' })} 수확 예정`}
@@ -294,7 +294,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                               {schedule.isHarvestReady ? '🧺 수확 적기' : `D-${remainingDays}`}
                             </span>
                           ) : (
-                            <span className="text-[10px] font-black text-green-700 bg-green-50 px-2 py-1 rounded-lg flex-shrink-0">성장중</span>
+                            <span className="text-[12px] font-black text-green-700 bg-green-50 px-2 py-1 rounded-lg flex-shrink-0">성장중</span>
                           )}
                         </div>
                       </div>
@@ -302,7 +302,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
 
                     {!item.isHarvested && (
                       <div className="space-y-2 px-1">
-                        <div className="flex justify-between items-center text-[9px] font-black mb-1">
+                        <div className="flex justify-between items-center text-[10px] font-black mb-1">
                           <span className="text-slate-400 uppercase tracking-widest">성장 및 관리 현황</span>
                           <span className="text-green-600 font-bold">{Math.round(schedule.harvestProgress)}%</span>
                         </div>
@@ -336,14 +336,14 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                           {schedule.fertilizerAlert ? (
                             <span className="text-[9px] font-black text-blue-600 animate-pulse">✨ {schedule.fertilizerAlert}!</span>
                           ) : (
-                            <span className="text-[9px] font-bold text-slate-300">
+                            <span className="text-[12px] font-bold text-slate-300">
                               {schedule.isHarvestReady ? '수확 가능' : `${remainingDays}일 뒤 수확`}
                             </span>
                           )}
                           {!crop.isPerennial && (crop.topDressing1 || crop.topDressing2) && (
                             <div className="flex items-center gap-1.5 opacity-80">
                               <div className="w-1.5 h-1.5 rounded-full bg-blue-500 shadow-sm"></div>
-                              <span className="text-[9px] text-blue-600 font-black tracking-tighter uppercase">비료 타이밍</span>
+                              <span className="text-[12px] text-blue-600 font-black tracking-tighter uppercase">비료 타이밍</span>
                             </div>
                           )}
                         </div>
@@ -378,7 +378,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                   </svg>
                 </button>
               </div>
-              <span className="text-[9px] font-black bg-slate-100 text-slate-400 px-2.5 py-0.5 rounded-full uppercase tracking-widest mt-1">
+              <span className="text-[12px] font-black bg-slate-100 text-slate-400 px-2.5 py-0.5 rounded-full uppercase tracking-widest mt-1">
                 {currentCrop.isPerennial ? 'PERENNIAL' : 'SEASONAL'}
               </span>
             </div>
@@ -405,13 +405,13 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {/* 1. 권장 수확일 */}
               {currentSchedule && !currentCrop.isPerennial && (
                 <div className="p-5 bg-green-50/40 rounded-3xl border border-green-100/30 text-center relative overflow-hidden">
-                  <h4 className="text-[10px] font-black text-green-700 uppercase mb-2 tracking-widest flex items-center justify-center gap-1">
+                  <h4 className="text-[12px] font-black text-green-700 uppercase mb-2 tracking-widest flex items-center justify-center gap-1">
                     <span className="text-sm">🧺</span> 권장 수확일
                   </h4>
                   <p className="text-lg font-black text-green-900 leading-tight">
                     {currentSchedule.harvestDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </p>
-                  <p className="text-[10px] text-green-600 font-bold mt-1 opacity-70">
+                  <p className="text-[12px] text-green-600 font-bold mt-1 opacity-70">
                     심은 지 {currentSchedule.dDay}일 경과 ({currentCrop.growthDays}일 재배 권장)
                   </p>
                   
@@ -419,7 +419,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                     <div className="mt-2 p-1.5 bg-amber-50 border border-amber-200 rounded-2xl animate-in fade-in zoom-in-95 duration-500">
                       <div className="flex items-center justify-center gap-1 mb-1">
                         <span className="text-sm">⚠️</span>
-                        <span className="text-[10px] font-black text-amber-700 tracking-tight">권장 시기보다 일찍 심었습니다</span>
+                        <span className="text-[12px] font-black text-amber-700 tracking-tight">권장 시기보다 일찍 심었습니다</span>
                       </div>
                     </div>
                   )}
@@ -428,10 +428,10 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
 
               {/* 2. 비료 & 영양 가이드 */}
               <div className="p-5 bg-blue-50/40 rounded-3xl border border-blue-100/30">
-                <h4 className="text-[10px] font-black text-blue-700 uppercase mb-2 tracking-widest flex items-center justify-center gap-1">
+                <h4 className="text-[14px] font-black text-blue-700 uppercase mb-2 tracking-widest flex items-center justify-center gap-1">
                   <span className="text-sm">🔋</span> 비료 & 영양 가이드
                 </h4>
-                <p className="text-xs text-blue-900 font-bold leading-relaxed text-center px-2">
+                <p className="text-lg text-blue-900 font-bold leading-relaxed text-center px-2">
                   {currentCrop.fertilizerTip}
                 </p>
                 {!currentCrop.isPerennial && (currentCrop.topDressing1 || currentCrop.topDressing2) && (
@@ -439,16 +439,16 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                     <div className="flex items-center gap-4">
                       {currentCrop.topDressing1 && (
                         <div className="flex flex-col items-center">
-                          <span className="text-[9px] font-black text-slate-400 uppercase tracking-tighter mb-1">1차 (웃거름)</span>
-                          <div className={`w-8 h-5 rounded-2xl flex items-center justify-center font-black text-[10px] shadow-sm transition-all ${currentSchedule?.dDay! >= currentCrop.topDressing1 ? 'bg-blue-600 text-white scale-110' : 'bg-slate-100 text-slate-400'}`}>
+                          <span className="text-[12px] font-black text-slate-400 uppercase tracking-tighter mb-1">1차 (웃거름)</span>
+                          <div className={`w-8 h-5 rounded-2xl flex items-center justify-center font-black text-[12px] shadow-sm transition-all ${currentSchedule?.dDay! >= currentCrop.topDressing1 ? 'bg-blue-600 text-white scale-110' : 'bg-slate-100 text-slate-400'}`}>
                             {currentCrop.topDressing1}일
                           </div>
                         </div>
                       )}
                       {currentCrop.topDressing2 && (
                         <div className="flex flex-col items-center">
-                          <span className="text-[9px] font-black text-slate-400 uppercase tracking-tighter mb-1">2차 (웃거름)</span>
-                          <div className={`w-8 h-5 rounded-2xl flex items-center justify-center font-black text-[10px] shadow-sm transition-all ${currentSchedule?.dDay! >= currentCrop.topDressing2 ? 'bg-blue-600 text-white scale-110' : 'bg-slate-100 text-slate-400'}`}>
+                          <span className="text-[12px] font-black text-slate-400 uppercase tracking-tighter mb-1">2차 (웃거름)</span>
+                          <div className={`w-8 h-5 rounded-2xl flex items-center justify-center font-black text-[12px] shadow-sm transition-all ${currentSchedule?.dDay! >= currentCrop.topDressing2 ? 'bg-blue-600 text-white scale-110' : 'bg-slate-100 text-slate-400'}`}>
                             {currentCrop.topDressing2}일
                           </div>
                         </div>
@@ -461,20 +461,20 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {/* 3. 재배 적정 온도 */}
               {currentCrop.tempInfo && (
                 <div className="p-5 bg-orange-50/40 rounded-3xl border border-orange-100/30">
-                  <h4 className="text-[10px] font-black text-orange-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
+                  <h4 className="text-[14px] font-black text-orange-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
                     <span className="text-sm">🌡️</span> 재배 적정 온도
                   </h4>
                   <div className="space-y-2">
-                    <div className="flex justify-between items-center text-[11px]">
+                    <div className="flex justify-between items-center text-[12px]">
                       <span className="text-slate-500 font-bold">발아온도</span>
                       <span className="text-slate-900 font-black">{currentCrop.tempInfo.germination}</span>
                     </div>
-                    <div className="flex justify-between items-center text-[11px]">
+                    <div className="flex justify-between items-center text-[12px]">
                       <span className="text-slate-500 font-bold">생육온도</span>
                       <span className="text-slate-900 font-black">{currentCrop.tempInfo.growth}</span>
                     </div>
                     <div className="pt-2 border-t border-orange-100/50">
-                      <span className="text-[10px] font-bold text-orange-800 leading-tight block">
+                      <span className="text-[12px] font-bold text-orange-800 leading-tight block">
                         💡 {currentCrop.tempInfo.characteristic}
                       </span>
                     </div>
@@ -486,13 +486,13 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {/* 4. 주요 관리 단계 (careSteps) */}
               {currentCrop.careSteps && currentCrop.careSteps.length > 0 && (
                 <div className="p-5 bg-green-50/40 rounded-3xl border border-green-100/30">
-                  <h4 className="text-[10px] font-black text-green-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
+                  <h4 className="text-[14px] font-black text-green-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
                     <span className="text-sm">📌</span> 주요 관리 단계
                   </h4>
                   <div className="space-y-2">
                     {currentCrop.careSteps.map((step, idx) => (
                       <div key={idx} className="flex gap-3 items-start">
-                        <span className="bg-green-100 text-green-700 text-[10px] font-black px-2 py-0.5 rounded-lg shrink-0">
+                        <span className="bg-green-100 text-green-700 text-[12px] font-black px-2 py-0.5 rounded-lg shrink-0">
                           D+{step.daysAfter}
                         </span>
                         <div className="flex flex-col">
@@ -508,14 +508,14 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {/* 5. 병해충 및 예방 가이드 (commonPests, preventionTip) */}
               {(currentCrop.commonPests || currentCrop.preventionTip) && (
                 <div className="p-5 bg-red-50/40 rounded-3xl border border-red-100/30">
-                  <h4 className="text-[10px] font-black text-red-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
+                  <h4 className="text-[14px] font-black text-red-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
                     <span className="text-sm">🐛</span> 병해충 및 예방 가이드
                   </h4>
                   <div className="space-y-3">
                     {currentCrop.commonPests && (
                       <div className="flex flex-wrap gap-1.5">
                         {currentCrop.commonPests.map((pest, idx) => (
-                          <span key={idx} className="bg-white border border-red-100 text-red-600 text-[10px] font-black px-2 py-0.5 rounded-full shadow-sm">
+                          <span key={idx} className="bg-white border border-red-100 text-red-600 text-[12px] font-black px-2 py-0.5 rounded-full shadow-sm">
                             {pest}
                           </span>
                         ))}
@@ -533,25 +533,25 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               )}
 
               <div className="space-y-1.5 px-1 pt-2">
-                <label className="text-[9px] font-black text-slate-400 uppercase tracking-widest pl-1">심은 날짜 수정</label>
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest pl-1">심은 날짜 수정</label>
                 <input 
                   type="date"
                   defaultValue={new Date(selectedItem.plantDate).toISOString().split('T')[0]}
                   onChange={(e) => onUpdatePlantDate(selectedItem.id, e.target.value)}
-                  className="w-full bg-slate-50 border border-slate-100 focus:border-green-500 focus:bg-white rounded-xl px-4 py-2.5 text-sm font-black transition-all outline-none"
+                  className="w-full bg-slate-50 border border-slate-100 focus:border-green-500 focus:bg-white rounded-xl px-4 py-2.5 text-lg font-black transition-all outline-none"
                 />
               </div>
 
               <div className="flex gap-2 pt-6 sticky bottom-0 bg-white py-2">
                 <button 
                   onClick={() => { onToggleHarvest(selectedItem.id); setSelectedItem(null); }}
-                  className={`flex-1 py-3.5 rounded-xl font-black text-sm transition-all active:scale-95 ${selectedItem.isHarvested ? 'bg-slate-100 text-slate-400' : 'bg-green-600 text-white shadow-lg shadow-green-100/50'}`}
+                  className={`flex-1 py-3.5 rounded-xl font-black text-lg transition-all active:scale-95 ${selectedItem.isHarvested ? 'bg-slate-100 text-slate-400' : 'bg-green-600 text-white shadow-lg shadow-green-100/50'}`}
                 >
                   {selectedItem.isHarvested ? '완료취소' : '수확 완료'}
                 </button>
                 <button 
                   onClick={() => setSelectedItem(null)}
-                  className="flex-1 py-3.5 bg-slate-100 text-slate-500 rounded-xl font-black text-sm hover:bg-slate-200 transition-colors active:scale-95"
+                  className="flex-1 py-3.5 bg-slate-100 text-slate-500 rounded-xl font-black text-lg hover:bg-slate-200 transition-colors active:scale-95"
                 >
                   창 닫기
                 </button>
