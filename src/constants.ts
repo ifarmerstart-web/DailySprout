@@ -1028,10 +1028,11 @@ export const MASTER_CROPS: MasterCrop[] = [
     harvestCycle: '잎이 풍성해지면 수시로 줄기 끝 수확',
     fertilizerTip: '봄철 싹이 올라올 때 유기질 비료를 주면 잎의 향이 깊어집니다.',
     careSteps: [{ daysAfter: 30, action: '순지르기', description: '생장점을 잘라 곁가지를 유도합니다.' }],
-    commonPests: ['응애', '진딧물'],
-    preventionTip: '통풍이 잘 되게 관리하고 너무 밀식되지 않도록 주의하세요.',
-    emergencyAction: '응애 발생 시 잎 뒷면에 물을 강하게 뿌려 씻어내세요.',
-    nutrientDeficiency: '질소 부족 시 잎 색이 연해지고 줄기가 가늘어집니다.'
+    tempInfo: {
+      germination: '10~15 °C',
+      growth: '15~25 °C',
+      characteristic: '질소 부족 시 잎 색이 연해지고 줄기가 가늘어집니다.'
+    }
   },
   {
     id: 'applemint',
@@ -1047,10 +1048,11 @@ export const MASTER_CROPS: MasterCrop[] = [
     harvestCycle: '수확할수록 더 풍성해집니다.',
     fertilizerTip: '수확 후 액비를 조금씩 주면 계속해서 연한 잎이 나옵니다.',
     careSteps: [{ daysAfter: 40, action: '포기나누기', description: '번식이 심하면 화분이나 구역을 나눠줍니다.' }],
-    commonPests: ['진딧물', '달팽이'],
-    preventionTip: '습한 환경을 좋아하지만 물이 고이지 않게 관리하세요.',
-    emergencyAction: '진딧물 발견 시 난황유를 살포하여 방제하세요.',
-    nutrientDeficiency: '마그네슘 부족 시 잎맥 사이가 노랗게 변할 수 있습니다.'
+    tempInfo: {
+      germination: '10~15 °C',
+      growth: '15~25 °C',
+      characteristic: '마그네슘 부족 시 잎맥 사이가 노랗게 변할 수 있습니다.'
+    }
   },
   {
     id: 'lavender',
@@ -1067,10 +1069,11 @@ export const MASTER_CROPS: MasterCrop[] = [
     harvestCycle: '꽃대가 올라오면 꽃과 함께 수확',
     fertilizerTip: '척박한 땅에서도 잘 자라며, 과한 비료는 오히려 성장에 해롭습니다.',
     careSteps: [{ daysAfter: 60, action: '전지(가지치기)', description: '꽃이 진 후 모양을 잡아주며 잘라줍니다.' }],
-    commonPests: ['뿌리부패병'],
-    preventionTip: '장마철 물 빠짐 통로 확보 및 습기 제거에 만전을 기하세요.',
-    emergencyAction: '잎이 갑자기 시들면 즉시 관수를 중단하고 흙을 말리세요.',
-    nutrientDeficiency: '칼륨 부족 시 잎 끝이 갈색으로 마를 수 있습니다.'
+    tempInfo: {
+      germination: '10~15 °C',
+      growth: '15~25 °C',
+      characteristic: '칼륨 부족 시 잎 끝이 갈색으로 마를 수 있습니다.'
+    }
   },
   {
     id: 'thyme',
@@ -1086,10 +1089,11 @@ export const MASTER_CROPS: MasterCrop[] = [
     harvestCycle: '이른 아침에 향이 가장 강할 때 수확',
     fertilizerTip: '이른 봄 유기질 퇴비를 조금 주는 것으로 충분합니다.',
     careSteps: [{ daysAfter: 45, action: '통풍 전지', description: '안쪽의 밀집된 줄기를 솎아줍니다.' }],
-    commonPests: ['진딧물', '응애'],
-    preventionTip: '햇빛을 충분히 쬐어주고 과습을 절대 피해야 합니다.',
-    emergencyAction: '곰팡이 증상이 보이면 즉시 해당 부위를 잘라내고 살균 처리를 하세요.',
-    nutrientDeficiency: '인산 부족 시 성장이 눈에 띄게 느려지고 잎 색이 어두워집니다.'
+    tempInfo: {
+      germination: '10~15 °C',
+      growth: '15~25 °C',
+      characteristic: '인산 부족 시 성장이 눈에 띄게 느려지고 잎 색이 어두워집니다.'
+    }
   },
   {
     id: 'basil',
@@ -1106,9 +1110,10 @@ export const MASTER_CROPS: MasterCrop[] = [
     harvestCycle: '잎이 10장 이상 되면 수시로 잎 수확',
     fertilizerTip: '잎을 계속 수확하므로 2주 간격으로 연한 액비를 주면 좋습니다.',
     careSteps: [{ daysAfter: 20, action: '꽃대 제거', description: '꽃이 피기 시작하면 맛이 떨어지므로 즉시 잘라줍니다.' }],
-    commonPests: ['진딧물', '달팽이', '노균병'],
-    preventionTip: '저녁 늦게 잎에 물이 닿지 않도록 뿌리 쪽에만 물을 주세요.',
-    emergencyAction: '달팽이가 보이면 맥주 트랩을 설치하거나 직접 포획하세요.',
-    nutrientDeficiency: '질소가 부족하면 잎이 얇아지고 노랗게 변합니다.'
+    tempInfo: {
+      germination: '10~15 °C',
+      growth: '15~25 °C',
+      characteristic: '질소가 부족하면 잎이 얇아지고 노랗게 변합니다.'
+    }
   }
 ];
