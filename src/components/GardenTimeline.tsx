@@ -406,7 +406,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {currentSchedule && !currentCrop.isPerennial && (
                 <div className="p-5 bg-green-50/40 rounded-3xl border border-green-100/30 text-center relative overflow-hidden">
                   <h4 className="text-[12px] font-black text-green-700 uppercase mb-2 tracking-widest flex items-center justify-center gap-1">
-                    <span className="text-sm">🧺</span> 권장 수확일
+                    <span className="text-lg">🧺</span> 권장 수확일
                   </h4>
                   <p className="text-lg font-black text-green-900 leading-tight">
                     {currentSchedule.harvestDate.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}
@@ -418,7 +418,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                   {isEarlyWarning && (
                     <div className="mt-2 p-1.5 bg-amber-50 border border-amber-200 rounded-2xl animate-in fade-in zoom-in-95 duration-500">
                       <div className="flex items-center justify-center gap-1 mb-1">
-                        <span className="text-sm">⚠️</span>
+                        <span className="text-lg">⚠️</span>
                         <span className="text-[12px] font-black text-amber-700 tracking-tight">권장 시기보다 일찍 심었습니다</span>
                       </div>
                     </div>
@@ -429,7 +429,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {/* 2. 비료 & 영양 가이드 */}
               <div className="p-5 bg-blue-50/40 rounded-3xl border border-blue-100/30">
                 <h4 className="text-[14px] font-black text-blue-700 uppercase mb-2 tracking-widest flex items-center justify-center gap-1">
-                  <span className="text-sm">🔋</span> 비료 & 영양 가이드
+                  <span className="text-lg">🔋</span> 비료 & 영양 가이드
                 </h4>
                 <p className="text-lg text-blue-900 font-bold leading-relaxed text-center px-2">
                   {currentCrop.fertilizerTip}
@@ -462,7 +462,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {currentCrop.tempInfo && (
                 <div className="p-5 bg-orange-50/40 rounded-3xl border border-orange-100/30">
                   <h4 className="text-[14px] font-black text-orange-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
-                    <span className="text-sm">🌡️</span> 재배 적정 온도
+                    <span className="text-lg">🌡️</span> 재배 적정 온도
                   </h4>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center text-[12px]">
@@ -487,7 +487,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {currentCrop.careSteps && currentCrop.careSteps.length > 0 && (
                 <div className="p-5 bg-green-50/40 rounded-3xl border border-green-100/30">
                   <h4 className="text-[14px] font-black text-green-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
-                    <span className="text-sm">📌</span> 주요 관리 단계
+                    <span className="text-lg">📌</span> 주요 관리 단계
                   </h4>
                   <div className="space-y-2">
                     {currentCrop.careSteps.map((step, idx) => (
@@ -509,7 +509,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
               {(currentCrop.commonPests || currentCrop.preventionTip) && (
                 <div className="p-5 bg-red-50/40 rounded-3xl border border-red-100/30">
                   <h4 className="text-[14px] font-black text-red-700 uppercase mb-3 tracking-widest flex items-center justify-center gap-1">
-                    <span className="text-sm">🐛</span> 병해충 및 예방 가이드
+                    <span className="text-lg">🐛</span> 병해충 및 예방 가이드
                   </h4>
                   <div className="space-y-3">
                     {currentCrop.commonPests && (
