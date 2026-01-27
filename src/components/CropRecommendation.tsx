@@ -54,7 +54,7 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
         <h2 className="text-lg font-bold text-slate-800 tracking-tight">
           {filter === 'PERENNIAL' ? '다년생 작물 추천' : filter === 'ANNUAL' ? '이번 시즌 추천 작물' : '텃밭 작물 가이드'}
         </h2>
-        <p className="text-[11px] text-slate-500 mt-1 leading-relaxed">
+        <p className="text-[12px] text-slate-500 mt-1 leading-relaxed">
           {region === RegionType.NORTH ? '❄️ 북부' : region === RegionType.SOUTH ? '☀️ 남부' : '☁️ 중부'} 지역 기준 
           <strong> {regionOffset >= 0 ? `${regionOffset}일 늦게` : `${Math.abs(regionOffset)}일 빠르게`}</strong> 심는 것을 권장합니다.
         </p>
@@ -67,7 +67,7 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-bold transition-all border ${
+              className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-bold transition-all border ${
                 activeCategory === cat 
                   ? 'bg-green-600 text-white border-green-600 shadow-md scale-105' 
                   : 'bg-white text-slate-400 border-slate-100 hover:bg-slate-50'
@@ -90,7 +90,7 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
               <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-inner flex-shrink-0 relative">
                 <img src={crop.image} alt={crop.name} className="w-full h-full object-cover" />
                 <div className="absolute top-1 left-1 bg-white/90 backdrop-blur px-1.5 py-0.5 rounded-lg border border-slate-100 shadow-sm">
-                   <span className={`text-[8px] font-black uppercase tracking-tighter ${crop.method === PlantingMethod.SEED ? 'text-orange-600' : 'text-blue-600'}`}>
+                   <span className={`text-[10px] font-black uppercase tracking-tighter ${crop.method === PlantingMethod.SEED ? 'text-orange-600' : 'text-blue-600'}`}>
                     {crop.method === PlantingMethod.SEED ? '직파' : '모종'}
                   </span>
                 </div>
@@ -100,21 +100,21 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
                   <div className="flex justify-between items-start">
                     <h3 className="font-bold text-slate-800 text-lg flex items-center gap-1.5">
                       {crop.name}
-                      {crop.isPerennial && <span className="text-[10px] text-green-600 bg-green-50 px-1 rounded">∞</span>}
+                      {crop.isPerennial && <span className="text-[12px] text-green-600 bg-green-50 px-1 rounded">∞</span>}
                     </h3>
-                    <span className="text-[9px] text-slate-300 font-bold uppercase tracking-widest">{crop.type.split(' ')[0]}</span>
+                    <span className="text-[10px] text-slate-300 font-bold uppercase tracking-widest">{crop.type.split(' ')[0]}</span>
                   </div>
                   <div className="flex items-center gap-1.5 mt-1.5">
-                    <span className="text-[10px] font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-lg border border-green-100">
+                    <span className="text-[12px] font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-lg border border-green-100">
                       📅 {adjustedDate.getMonth() + 1}월 {adjustedDate.getDate() > 20 ? '하순' : adjustedDate.getDate() > 10 ? '중순' : '상순'}
                     </span>
                   </div>
-                  <p className="text-[10px] text-slate-500 line-clamp-2 mt-2 leading-relaxed font-medium">{crop.description}</p>
+                  <p className="text-[12px] text-slate-500 line-clamp-2 mt-2 leading-relaxed font-medium">{crop.description}</p>
                 </div>
                 <div className="flex justify-end items-center mt-3">
                   <button 
                     onClick={() => onAdd(crop.id)}
-                    className="bg-green-600 text-white text-[10px] px-4 py-1.5 rounded-full font-black hover:bg-green-700 shadow-sm transition-all active:translate-y-0.5"
+                    className="bg-green-600 text-white text-[12px] px-4 py-1.5 rounded-full font-black hover:bg-green-700 shadow-sm transition-all active:translate-y-0.5"
                   >
                     심기 시작
                   </button>
@@ -128,7 +128,7 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
       {filteredCrops.length === 0 && (
         <div className="py-20 text-center text-slate-400">
           <span className="text-4xl mb-4 block">🏜️</span>
-          <p className="text-sm">해당 카테고리의 작물이 없습니다.</p>
+          <p className="text-[14px]">해당 카테고리의 작물이 없습니다.</p>
         </div>
       )}
     </div>
