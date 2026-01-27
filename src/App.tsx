@@ -220,28 +220,10 @@ const App: React.FC = () => {
   );
 };
 
-const RegionOption = ({ title, desc, active, onClick, color }: { title: string, desc: string, active: boolean, onClick: () => void, color: string }) => (
-  <button 
-    onClick={onClick}
-    className={`w-full ${color} p-4 rounded-3xl border-2 transition-all flex justify-between items-center ${active ? 'border-green-500 ring-4 ring-green-50' : 'border-transparent opacity-60 hover:opacity-100'}`}
-  >
-    <div className="text-left">
-      <span className="font-black text-slate-800 text-sm block">{title}</span>
-      <span className="text-[12px] text-slate-500 font-bold">{desc}</span>
-    </div>
-    {active && <span className="bg-green-500 text-white p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg></span>}
-  </button>
-);
-
 const NavButton = ({ active, icon, label, onClick }: { active: boolean, icon: string, label: string, onClick: () => void }) => (
-  <button 
-    onClick={onClick}
-    className={`flex flex-col items-center gap-1 transition-all ${active ? 'scale-110' : 'opacity-40 grayscale'}`}
-  >
+  <button onClick={onClick} className={`flex flex-col items-center gap-1 transition-all ${active ? 'scale-110' : 'opacity-40 grayscale'}`}>
     <span className="text-xl">{icon}</span>
-    <span className={`text-[12px] font-black uppercase tracking-tighter ${active ? 'text-green-700' : 'text-slate-400'}`}>
-      {label}
-    </span>
+    <span className={`text-[12px] font-black uppercase tracking-tighter ${active ? 'text-green-700' : 'text-slate-400'}`}>{label}</span>
   </button>
 );
 
