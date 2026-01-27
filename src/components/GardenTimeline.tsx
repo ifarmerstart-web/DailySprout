@@ -238,7 +238,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
           {filteredList.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-24 bg-white rounded-[40px] border border-slate-100 shadow-sm">
               <span className="text-5xl mb-4">🪴</span>
-              <p className="text-sm font-bold text-slate-400">등록된 작물이 없습니다.</p>
+              <p className="text-lg font-bold text-slate-400">등록된 작물이 없습니다.</p>
               <button onClick={onAddClick} className="mt-4 text-xs font-black text-green-600 bg-green-50 px-4 py-2 rounded-full hover:bg-green-100">
                 {filterType === 'PERENNIAL' ? '다년생 작물 보러가기' : '이번 주 추천 작물 심기'}
               </button>
@@ -278,7 +278,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                                   <path fillRule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd" />
                                 </svg>
                               </button>
-                              <h3 className="font-black text-slate-800 text-xl flex items-center gap-1.5 truncate">
+                              <h3 className="font-black text-slate-800 text-5xl flex items-center gap-1.5 truncate">//작물이름
                                 {crop.name}
                                 {isTooEarly && !item.isHarvested && <span className="text-amber-500 text-xs">⚠️</span>}
                               </h3>
