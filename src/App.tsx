@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { RegionType, UserGardenItem } from '@/types';
 import { MASTER_CROPS } from '@/constants';
@@ -5,7 +6,6 @@ import RegionSelector from '@/components/RegionSelector';
 import GardenTimeline from '@/components/GardenTimeline';
 import CropRecommendation from '@/components/CropRecommendation';
 import GuideTab from '@/components/GuideTab';
-import AdMobBanner from './AdMobBanner'; // 광고 컴포넌트 임포트
 
 const App: React.FC = () => {
   const [region, setRegion] = useState<RegionType | null>(() => {
@@ -32,6 +32,7 @@ const App: React.FC = () => {
 
   const addCropToGarden = (cropId: string) => {
     const newItem: UserGardenItem = {
+      
       id: Math.random().toString(36).substr(2, 9),
       cropId,
       plantDate: new Date().toISOString(),
@@ -80,9 +81,6 @@ const App: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto min-h-screen bg-slate-50 flex flex-col pb-24 shadow-2xl relative">
-      {/* 1. 광고 배너 호출 (여기에 배치하면 화면 전체에 적용됩니다) */}
-      <AdMobBanner />
-
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-md px-6 py-4 sticky top-0 z-20 flex justify-between items-center border-b border-slate-100">
         <div>
@@ -94,7 +92,7 @@ const App: React.FC = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 p-4" style={{ paddingBottom: '70px' }}>
+      <main className="flex-1 p-4">
         {activeTab === 'season' && (
           <GardenTimeline 
             garden={garden} 
@@ -221,7 +219,6 @@ const App: React.FC = () => {
   );
 };
 
-// 보조 컴포넌트들
 const RegionOption = ({ title, desc, active, onClick, color }: { title: string, desc: string, active: boolean, onClick: () => void, color: string }) => (
   <button 
     onClick={onClick}
@@ -247,4 +244,4 @@ const NavButton = ({ active, icon, label, onClick }: { active: boolean, icon: st
   </button>
 );
 
-export default App; // 마지막에 한 번만 내보냅니다.
+export default App;
