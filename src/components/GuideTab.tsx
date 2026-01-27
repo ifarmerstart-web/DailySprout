@@ -25,10 +25,10 @@ const FARMER_GUIDES: GuideContent[] = [
       <div className="space-y-6">
         <section>
           <h5 className="text-lg font-black text-orange-700 mb-2 flex items-center gap-2">
-            <span className="bg-orange-100 px-2 py-0.5 rounded text-[10px]">POINT 1</span>
+            <span className="bg-orange-100 px-2 py-0.5 rounded text-[12px]">POINT 1</span>
             [토양 관리] 좋은 땅이 좋은 수확을 만든다
           </h5>
-          <p className="text-sm text-slate-600 leading-relaxed font-medium">
+          <p className="text-lg text-slate-600 leading-relaxed font-medium">
             씨앗을 심기 전, 작물이 뿌리내릴 환경을 조성하는 것이 농사의 80%입니다.
           </p>
         </section>
@@ -37,7 +37,7 @@ const FARMER_GUIDES: GuideContent[] = [
           <h5 className="text-lg font-black text-slate-800 mb-2 flex items-center gap-2">
             퇴비와 가스 빼기
           </h5>
-          <p className="text-sm text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             심기 최소 2주 전에 퇴비를 뿌리고 흙과 섞어주세요. 퇴비가 분해될 때 발생하는 가스는 어린뿌리를 태우고 해충(고자리파리 등)을 부릅니다.
           </p>
         </section>
@@ -46,7 +46,7 @@ const FARMER_GUIDES: GuideContent[] = [
           <h5 className="text-lg font-black text-slate-800 mb-2 flex items-center gap-2">
             배수와 통기성
           </h5>
-          <p className="text-sm text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             물이 고이면 뿌리가 썩습니다. 흙을 한 뼘 정도 높게 쌓아 <strong>두둑</strong>을 만들면 물 빠짐이 좋아지고 뿌리가 숨쉬기 편해집니다.
           </p>
         </section>
@@ -55,7 +55,7 @@ const FARMER_GUIDES: GuideContent[] = [
           <h5 className="text-lg font-black text-slate-800 mb-2 flex items-center gap-2">
             산도(pH) 조절
           </h5>
-          <p className="text-sm text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             대부분의 작물은 중성 토양을 좋아합니다. 산성비 등으로 산성화된 땅에는 석회(고토석회)를 뿌려 중화시켜 주는 것이 좋습니다.
           </p>
         </section>
@@ -267,7 +267,7 @@ const FARMER_GUIDES: GuideContent[] = [
           <p className="text-[12px] text-slate-600 leading-relaxed">
             가장 중요한 것은 물이 고이지 않게 하는 것입니다.
           </p>
-          <ul className="mt-2 space-y-2 text-[10px] text-slate-500">
+          <ul className="mt-2 space-y-2 text-[12px] text-slate-500">
             <li>• <strong>배수로 정비:</strong> 장마 전 고랑을 깊게 파서 물이 정체되지 않고 흘러나갈 수 있게 길을 터주세요.</li>
             <li>• <strong>두둑 높이기:</strong> 습해에 약한 작물은 흙을 높게 쌓아(두둑) 뿌리가 물에 잠기는 것을 방지합니다.</li>
           </ul>
@@ -306,7 +306,7 @@ const PESTS: PestInfo[] = [
       <div className="space-y-6">
         <section>
           <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [친환경] 마요네즈 희석액
           </h5>
           <p className="text-lg text-slate-600 leading-relaxed">
@@ -321,7 +321,7 @@ const PESTS: PestInfo[] = [
 
         <section>
           <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
-            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [고효율] 니코틴 및 알코올 요법
           </h5>
           <p className="text-lg text-slate-600 leading-relaxed">
@@ -364,19 +364,19 @@ const PESTS: PestInfo[] = [
     image: 'https://images.unsplash.com/photo-1533130101416-6202573229b1?auto=format&fit=crop&q=80&w=300',
     details: (
       <div className="space-y-6">
-        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg text-slate-600 leading-relaxed font-medium">
           식물 싹이 돋아날 때 가장 위협적인 존재 중 하나입니다. 연약한 새순을 갉아먹어 성장을 완전히 멈추게 할 수 있어 빠른 대처가 필요합니다.
         </p>
 
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [유인/제거] 맥주 트랩
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             달팽이는 맥주의 효모 향을 매우 좋아하는 습성이 있습니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 낮은 용기에 맥주 2~3cm + 설탕 한 스푼 혼합</li>
             <li>• <strong>설치:</strong> 달팽이가 자주 나타나는 화분 근처 배치</li>
             <li>• <strong>원리:</strong> 향에 이끌려 온 달팽이가 맥주에 빠져 사멸</li>
@@ -384,14 +384,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
-            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+          <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [물리적 차단] 구리 테이프 및 장벽
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             달팽이가 몸에 닿는 것을 싫어하는 특정 물질로 접근을 막습니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>구리 테이프:</strong> 구리와 점액이 닿을 때 발생하는 미세 전기 자극 이용</li>
             <li>• <strong>거친 물질:</strong> 부서진 달걀 껍데기나 커피 찌꺼기를 주변에 살포</li>
             <li>• <strong>효과:</strong> 피부를 자극하고 이동을 방해하여 경로 차단</li>
@@ -399,14 +399,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-red-700 mb-2 flex items-center gap-2">
-            <span className="bg-red-100 px-2 py-0.5 rounded text-[10px]">STEP 3</span>
+          <h5 className="text-lg font-black text-red-700 mb-2 flex items-center gap-2">
+            <span className="bg-red-100 px-2 py-0.5 rounded text-[12px]">STEP 3</span>
             [전문적] 천연 성분 살충제
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             개체 수가 너무 많을 때 사용하는 확실한 친환경 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>인산철 약제:</strong> 시중의 달팽이 전용 알갱이 약제 사용</li>
             <li>• <strong>안전성:</strong> 토양과 인체에 무해한 친환경 성분이 많음</li>
             <li>• <strong>사용법:</strong> 줄기에서 조금 떨어진 흙 위에 듬성듬성 살포</li>
@@ -414,7 +414,7 @@ const PESTS: PestInfo[] = [
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>꿀팁:</strong> 달팽이는 야행성이고 습한 곳을 좋아합니다. 가급적 물은 <strong>아침에 주어</strong> 밤사이에 겉흙이 마르게 유지하는 것이 가장 좋은 예방법입니다.
           </p>
         </div>
@@ -428,19 +428,19 @@ const PESTS: PestInfo[] = [
     image: 'https://images.unsplash.com/photo-1542331422-520e03c961e6?auto=format&fit=crop&q=80&w=300',
     details: (
       <div className="space-y-6">
-        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg text-slate-600 leading-relaxed font-medium">
           식물의 잎과 꽃을 흡즙하여 하얀 반점이나 은색 무늬를 남기고, 성장을 방해하는 총채벌레는 크기가 매우 작아 발견이 어렵고 번식력이 강력합니다.
         </p>
 
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [물리적/예방] 끈끈이 트랩 활용
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             총채벌레는 특정 색상에 강하게 끌리는 성질이 있습니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 식물 근처에 청색 또는 황색 끈끈이 트랩 설치</li>
             <li>• <strong>특징:</strong> 꽃노랑총채벌레는 청색에 더 민감하게 반응</li>
             <li>• <strong>효과:</strong> 성충 포획 및 알 낳기 방지, 개체 수 모니터링</li>
@@ -448,14 +448,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
-            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+          <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [친환경/방제] 천연 오일 및 비눗물
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             총채벌레의 외피를 손상시키거나 질식시키는 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>님오일:</strong> 3~5일 간격으로 잎 앞뒷면에 꼼꼼히 살포</li>
             <li>• <strong>비눗물:</strong> 물 1L + 주방세제 2~3방울로 숨구멍 차단</li>
             <li>• <strong>주의:</strong> 꽃봉오리 속이나 흙 속까지 꼼꼼하게 살포</li>
@@ -463,14 +463,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-red-700 mb-2 flex items-center gap-2">
-            <span className="bg-red-100 px-2 py-0.5 rounded text-[10px]">STEP 3</span>
+          <h5 className="text-lg font-black text-red-700 mb-2 flex items-center gap-2">
+            <span className="bg-red-100 px-2 py-0.5 rounded text-[12px]">STEP 3</span>
             [전문적] 약제 교차 살포
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             약제 내성이 매우 빨리 생기므로 성분을 번갈아 쓰는 것이 핵심입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>침투이행성 약제:</strong> 식물에 독성이 퍼져 즙을 먹는 벌레 박멸</li>
             <li>• <strong>교차 살포:</strong> A약제와 B약제를 3~5일 간격으로 번갈아 사용</li>
             <li>• <strong>방제 기간:</strong> 생애 주기를 끊기 위해 최소 2주간 지속 방제</li>
@@ -478,7 +478,7 @@ const PESTS: PestInfo[] = [
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>추가 팁:</strong> 총채벌레는 건조한 환경을 좋아합니다. 주변 습도를 적절히 유지하고 <strong>분무기로 잎에 물을 자주 뿌려주는 것</strong>만으로도 번식 속도를 늦출 수 있습니다.
           </p>
         </div>
@@ -492,19 +492,19 @@ const PESTS: PestInfo[] = [
     image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=300',
     details: (
       <div className="space-y-6">
-        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg text-slate-600 leading-relaxed font-medium">
           진딧물을 키우는 주범인 개미를 퇴치하는 것은 식물 건강을 지키는 데 매우 중요합니다. 개미는 진딧물의 단물을 먹는 대가로 천적으로부터 진딧물을 보호하기 때문입니다.
         </p>
 
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [천연/차단] 강력한 향으로 경로 차단
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             개미는 후각이 매우 발달하여 특정 향을 기피합니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>시나몬(계피) 가루:</strong> 화분 주변이나 틈새에 뿌려 우회 유도</li>
             <li>• <strong>커피 찌꺼기:</strong> 카페인 독성과 강력한 향으로 페로몬 교란</li>
             <li>• <strong>식초 희석액:</strong> 물과 식초 1:1 혼합. 개미가 남긴 이정표 제거</li>
@@ -512,14 +512,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
-            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+          <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [유인/박멸] 붕산 트랩 (또는 베이킹소다)
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             개미의 소화 시스템을 교란하여 여왕개미까지 박멸하는 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 설탕 1 + 붕산(또는 베이킹소다) 1 혼합</li>
             <li>• <strong>설치:</strong> 개미가 다니는 길목에 조금씩 두기</li>
             <li>• <strong>주의:</strong> 아이나 반려동물이 먹지 않도록 주의 필수</li>
@@ -527,7 +527,7 @@ const PESTS: PestInfo[] = [
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>핵심:</strong> 개미가 많다면 높은 확률로 <strong>진딧물</strong>이 이미 발생했을 가능성이 큽니다. 개미 퇴치와 함께 잎 뒷면의 진딧물 여부를 반드시 확인하세요!
           </p>
         </div>
@@ -541,19 +541,19 @@ const PESTS: PestInfo[] = [
     image: 'https://images.unsplash.com/photo-1590005024862-6b67679a29fb?auto=format&fit=crop&q=80&w=300',
     details: (
       <div className="space-y-6">
-        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg text-slate-600 leading-relaxed font-medium">
           잎을 갉아먹어 뼈대만 남깁니다. 배추, 무, 양배추 등 십자화과 작물의 주적이며 번식력이 매우 강력합니다.
         </p>
 
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [친환경] 한랭사(미세 그물망) 설치
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             나비가 잎에 알을 낳지 못하도록 물리적으로 원천 차단하는 가장 확실하고 친환경적인 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 작물 심은 직후, 고운 메시의 한랭사를 터널 모양으로 설치</li>
             <li>• <strong>효과:</strong> 나비의 산란 기회 원천 차단. 약품 없이 100%에 가까운 방제</li>
             <li>• <strong>추천:</strong> 소규모 텃밭에서 가장 권장하는 친환경 방식</li>
@@ -561,14 +561,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
-            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+          <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [고효율] BT균(미생물 살충제) 정기 살포
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             나비가 알을 낳았더라도 애벌레가 깨어나자마자 사멸하도록 만드는 생물학적 방제법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> BT균 제제를 물에 희석하여 잎 앞뒷면에 골고루 살포</li>
             <li>• <strong>원리:</strong> 나비목 애벌레의 소화 기관을 마비시켜 사멸 유도</li>
             <li>• <strong>안전성:</strong> 인체나 꿀벌 등 다른 곤충에게는 무해한 탁월한 효과</li>
@@ -576,14 +576,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-red-700 mb-2 flex items-center gap-2">
-            <span className="bg-red-100 px-2 py-0.5 rounded text-[10px]">STEP 3</span>
+          <h5 className="text-lg font-black text-red-700 mb-2 flex items-center gap-2">
+            <span className="bg-red-100 px-2 py-0.5 rounded text-[12px]">STEP 3</span>
             [전문적] 토양 살충제 및 침투이행성 약제
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             작물을 심기 전이나 성장 초기에 미리 조치를 취해 벌레의 생존을 막는 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 밭을 일굴 때 토양 살충제 혼합 또는 초기 전용 약제 살포</li>
             <li>• <strong>효과:</strong> 약제가 식물 내부로 흡수되어 잎을 먹는 즉시 살충 효과 발휘</li>
             <li>• <strong>장점:</strong> 대규모 재배 시 손이 덜 가면서도 가장 강력한 살충 효과</li>
@@ -591,7 +591,7 @@ const PESTS: PestInfo[] = [
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>팁:</strong> 청벌레는 잎 뒷면에 아주 작은 노란색 알을 하나씩 낳습니다. 평소에 잎을 뒤집어보며 <strong>노란 알이 보일 때마다 손으로 눌러 제거(보살)</strong>하는 습관을 들이면 큰 피해를 막을 수 있습니다.
           </p>
         </div>
@@ -605,19 +605,19 @@ const PESTS: PestInfo[] = [
     image: 'https://images.unsplash.com/photo-1551042743-394469796695?auto=format&fit=crop&q=80&w=300',
     details: (
       <div className="space-y-6">
-        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg text-slate-600 leading-relaxed font-medium">
           열매 작물의 주적으로, 즙을 빨아먹어 수확물의 품질을 크게 떨어뜨립니다. 위협을 느끼면 특유의 지독한 냄새를 풍기는 것이 특징입니다.
         </p>
 
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [친환경/물리적] 수작업 및 비눗물 트랩
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             노린재는 위협을 느끼면 바닥으로 떨어지는 습성이 있습니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 입구가 넓은 통에 비눗물을 담아 잎 아래에 대고 식물을 톡톡 건드림</li>
             <li>• <strong>원리:</strong> 비눗물의 계면활성제가 숨구멍을 막아 즉사시킴</li>
             <li>• <strong>팁:</strong> 활동성이 떨어지는 이른 아침에 작업하면 포획이 훨씬 수월함</li>
@@ -625,14 +625,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
-            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+          <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [유인 및 포획] 페로몬 트랩 설치
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             노린재의 번식 본능을 자극해 한곳으로 모아 퇴치하는 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 시중의 노린재 전용 '집합 페로몬 트랩'을 설치</li>
             <li>• <strong>주의사항:</strong> 트랩을 텃밭 가장자리(5~10m 밖)에 두어 노린재를 밖으로 유인</li>
             <li>• <strong>장점:</strong> 넓은 범위의 노린재 밀도를 지속적으로 낮추는 데 효과적</li>
@@ -640,14 +640,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-red-700 mb-2 flex items-center gap-2">
-            <span className="bg-red-100 px-2 py-0.5 rounded text-[10px]">STEP 3</span>
+          <h5 className="text-lg font-black text-red-700 mb-2 flex items-center gap-2">
+            <span className="bg-red-100 px-2 py-0.5 rounded text-[12px]">STEP 3</span>
             [전문적/방제] 기피제 및 전용 약제 살포
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             노린재가 싫어하는 향을 뿌려 접근을 막거나 전용 약제로 퇴치합니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>천연 기피제:</strong> 목초액, 마늘 추출물 등을 주기적으로 뿌려 접근 억제</li>
             <li>• <strong>전용 약제:</strong> 내성이 강하므로 등록된 전용 약제(빅카드 등)를 사용</li>
             <li>• <strong>방법:</strong> 오후 늦게나 이른 아침, 텃밭 전체를 감싸듯 꼼꼼히 살포</li>
@@ -655,7 +655,7 @@ const PESTS: PestInfo[] = [
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>추가 팁:</strong> 노린재는 주변 풀숲에서 겨울을 나고 날아오기 때문에, <strong>텃밭 주변의 잡초를 깔끔하게 제거</strong>해주는 것만으로도 발생 빈도를 크게 낮출 수 있습니다.
           </p>
         </div>
@@ -669,19 +669,19 @@ const PESTS: PestInfo[] = [
     image: 'https://images.unsplash.com/photo-1628537593258-290079979b0c?auto=format&fit=crop&q=80&w=300',
     details: (
       <div className="space-y-6">
-        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg text-slate-600 leading-relaxed font-medium">
           파, 마늘, 양파 등 인경채소의 뿌리를 갉아먹어 식물을 통째로 고사시키는 고자리파리는 땅속에서 피해를 주기 때문에 예방이 무엇보다 중요합니다.
         </p>
 
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [친환경/예방] 완숙 퇴비 사용 및 목초액 관주
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             고자리파리는 썩어가는 유기물(퇴비)의 냄새를 맡고 날아와 알을 낳습니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 반드시 완전히 발효된(완숙) 퇴비를 사용하세요.</li>
             <li>• <strong>관주:</strong> 목초액을 500~1,000배 희석하여 땅에 정기적으로 살포</li>
             <li>• <strong>효과:</strong> 특유의 탄내로 파리의 접근을 막고 토양 소독 효과</li>
@@ -689,14 +689,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
-            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+          <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [물리적/차단] 한랭사 및 비닐 멀칭
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             파리가 알을 낳을 장소에 접근하지 못하도록 물리적인 벽을 만드는 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>비닐 멀칭:</strong> 비닐로 땅을 덮으면 파리가 흙에 알을 낳기 어려워짐</li>
             <li>• <strong>한랭사:</strong> 성충인 파리가 작물 근처에 앉지 못하도록 미세 그물망 설치</li>
             <li>• <strong>시기:</strong> 특히 활동을 시작하는 초봄(3~4월)과 가을에 매우 효과적</li>
@@ -704,14 +704,14 @@ const PESTS: PestInfo[] = [
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-red-700 mb-2 flex items-center gap-2">
-            <span className="bg-red-100 px-2 py-0.5 rounded text-[10px]">STEP 3</span>
+          <h5 className="text-lg font-black text-red-700 mb-2 flex items-center gap-2">
+            <span className="bg-red-100 px-2 py-0.5 rounded text-[12px]">STEP 3</span>
             [전문적/방제] 토양 살충제 및 약제 관주
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             이미 땅속에 알이나 유충(구더기)이 있을 때 사용하는 확실한 방법입니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>토양 혼화:</strong> 심기 1~2주 전 입제 형태의 토양 살충제를 밭에 섞음</li>
             <li>• <strong>약제 관주:</strong> 피해 발생 시 전용 약제를 물에 타서 뿌리 근처 흙에 흠뻑 살포</li>
             <li>• <strong>주의:</strong> 분무기로 잎에만 뿌리는 것은 땅속 유충 방제에 효과가 없음</li>
@@ -719,7 +719,7 @@ const PESTS: PestInfo[] = [
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>팁:</strong> 고자리파리는 습한 환경을 좋아하므로 <strong>배수가 잘 되도록</strong> 관리해 주세요. 피해를 입어 시든 식물은 즉시 뽑아서 밭 멀리 버려야 다른 식물로의 전염을 막을 수 있습니다.
           </p>
         </div>
@@ -733,38 +733,38 @@ const PESTS: PestInfo[] = [
     image: 'https://images.unsplash.com/photo-1596431969060-6477b752989c?auto=format&fit=crop&q=60&w=300',
     details: (
       <div className="space-y-6">
-        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg text-slate-600 leading-relaxed font-medium">
           여름철부터 가을까지 활동하는 메뚜기는 뛰어난 도약력으로 밭 여기저기를 옮겨 다니며 잎을 식해합니다.</p>
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [물리적/포획] 이른 아침 직접 포획
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             기온이 낮은 이른 아침에는 메뚜기의 움직임이 둔해집니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>방법:</strong> 긴 장화나 장갑을 끼고 직접 잡아내거나 잠자리채 이용</li>
             <li>• <strong>특징:</strong> 개체수가 적을 때 가장 확실하고 친환경적인 방법</li>
           </ul>
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-blue-700 mb-2 flex items-center gap-2">
-            <span className="bg-blue-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+          <h5 className="text-lg font-black text-blue-700 mb-2 flex items-center gap-2">
+            <span className="bg-blue-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [기피/차단] 목초액 살포 및 한랭사
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             메뚜기가 싫어하는 환경을 조성하여 접근을 막습니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>목초액:</strong> 특유의 탄내로 메뚜기의 접근을 억제 (200~500배 희석)</li>
             <li>• <strong>한랭사:</strong> 어린 모종 시기에 한랭사를 씌우면 물리적 차단 가능</li>
           </ul>
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>팁:</strong> 메뚜기는 벼과 식물과 잡초를 좋아합니다. <strong>밭 주변의 풀깎기</strong>를 철저히 하면 메뚜기가 번식하고 숨을 곳이 사라집니다.
           </p>
         </div>
@@ -778,40 +778,40 @@ const PESTS: PestInfo[] = [
     image: 'https://images.unsplash.com/photo-1534346501570-36657879f906?auto=format&fit=crop&q=60&w=300',
     details: (
       <div className="space-y-6">
-        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg text-slate-600 leading-relaxed font-medium">
           뒷다리를 잡으면 방아를 찧는 듯한 동작을 하는 방아깨비는 메뚜기목 중 가장 큰 해충에 속하며, 식해량이 상당합니다.
         </p>
 
         <section>
-          <h5 className="text-sm font-black text-green-700 mb-2 flex items-center gap-2">
-            <span className="bg-green-100 px-2 py-0.5 rounded text-[10px]">STEP 1</span>
+          <h5 className="text-lg font-black text-green-700 mb-2 flex items-center gap-2">
+            <span className="bg-green-100 px-2 py-0.5 rounded text-[12px]">STEP 1</span>
             [물리적/차단] 서식지 정비
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             방아깨비는 긴 풀숲에 숨어 있다가 작물로 이동합니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>환경조성:</strong> 텃밭 주변 잡초를 짧게 깎아 노출되게 함</li>
             <li>• <strong>포획:</strong> 덩치가 커서 눈에 잘 띄므로 보이는 즉시 제거</li>
           </ul>
         </section>
 
         <section>
-          <h5 className="text-sm font-black text-red-700 mb-2 flex items-center gap-2">
-            <span className="bg-red-100 px-2 py-0.5 rounded text-[10px]">STEP 2</span>
+          <h5 className="text-lg font-black text-red-700 mb-2 flex items-center gap-2">
+            <span className="bg-red-100 px-2 py-0.5 rounded text-[12px]">STEP 2</span>
             [전문/방제] 약제 교차 살포
           </h5>
-          <p className="text-xs text-slate-600 leading-relaxed">
+          <p className="text-lg text-slate-600 leading-relaxed">
             피해가 심각하여 작물의 뼈대만 남을 경우 전용 약제를 사용합니다.
           </p>
-          <ul className="mt-2 space-y-1.5 text-[11px] text-slate-500 font-medium">
+          <ul className="mt-2 space-y-1.5 text-[12px] text-slate-500 font-medium">
             <li>• <strong>약제선택:</strong> 메뚜기목 해충에 등록된 약제 사용</li>
             <li>• <strong>주의:</strong> 수확 전 살포 금지 기간을 반드시 확인하세요.</li>
           </ul>
         </section>
 
         <div className="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-          <p className="text-[11px] text-amber-800 font-bold leading-relaxed">
+          <p className="text-[12px] text-amber-800 font-bold leading-relaxed">
             💡 <strong>팁:</strong> 방아깨비는 한 번에 많은 알을 낳습니다. 가을철 수확 후 <strong>밭을 깊게 갈아주면</strong> 땅속의 알들이 지표면으로 노출되어 겨울 추위에 사멸하게 됩니다.
           </p>
         </div>
@@ -839,7 +839,7 @@ const GuideTab: React.FC = () => {
               className={`${guide.color} p-4 rounded-3xl border border-transparent hover:border-slate-200 transition-all text-left active:scale-95`}
             >
               <span className="text-2xl mb-2 block">{guide.emoji}</span>
-              <span className="text-xs font-black text-slate-800">{guide.title}</span>
+              <span className="text-lg font-black text-slate-800">{guide.title}</span>
             </button>
           ))}
         </div>
@@ -859,10 +859,10 @@ const GuideTab: React.FC = () => {
               </div>
               <div className="text-left flex-1 min-w-0">
                 <div className="flex justify-between items-center mb-0.5">
-                  <span className="text-sm font-black text-slate-800">{pest.name}</span>
-                  <span className="text-[10px] font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full">{pest.season}</span>
+                  <span className="text-lg font-black text-slate-800">{pest.name}</span>
+                  <span className="text-[12px] font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full">{pest.season}</span>
                 </div>
-                <p className="text-[10px] text-slate-500 font-medium line-clamp-1">{pest.desc}</p>
+                <p className="text-[12px] text-slate-500 font-medium line-clamp-1">{pest.desc}</p>
               </div>
             </button>
           ))}
@@ -888,7 +888,7 @@ const GuideTab: React.FC = () => {
                 <h3 className="text-xl font-black text-slate-900">
                   {activeItem.type === 'guide' ? activeItem.item.title : activeItem.item.name}
                 </h3>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                <p className="text-[12px] font-bold text-slate-400 uppercase tracking-widest">
                   {activeItem.type === 'guide' ? 'Farmer Guide' : 'Pest Management'}
                 </p>
               </div>
@@ -900,7 +900,7 @@ const GuideTab: React.FC = () => {
 
             <button 
               onClick={() => setActiveItem(null)}
-              className="w-full py-4 bg-slate-100 text-slate-500 rounded-2xl font-black text-sm active:scale-95 transition-all"
+              className="w-full py-4 bg-slate-100 text-slate-500 rounded-2xl font-black text-lg active:scale-95 transition-all"
             >
               확인
             </button>
