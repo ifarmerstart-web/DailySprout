@@ -6,6 +6,25 @@ import RegionSelector from '@/components/RegionSelector';
 import GardenTimeline from '@/components/GardenTimeline';
 import CropRecommendation from '@/components/CropRecommendation';
 import GuideTab from '@/components/GuideTab';
+import AdMobBanner from './AdMobBanner';
+
+function App() {
+  return (
+    <div className="App">
+      {/* 1. 광고 컴포넌트 추가 */}
+      <AdMobBanner />
+
+      {/* 2. 기존 DailySprout 콘텐츠 */}
+      <header>
+        <h1>DailySprout 🌱</h1>
+      </header>
+      <main style={{ paddingBottom: '60px' }}> {/* 중요: 광고 높이만큼 아래 여백 추가 */}
+        {/* 식물 일기, 달력 등 기존 코드 */}
+      </main>
+    </div>
+  );
+}
+export default App;
 
 const App: React.FC = () => {
   const [region, setRegion] = useState<RegionType | null>(() => {
