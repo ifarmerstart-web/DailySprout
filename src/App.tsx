@@ -135,7 +135,7 @@ const App: React.FC = () => {
             <div className="bg-white p-6 rounded-[32px] shadow-sm border border-green-100">
               <div className="p-4 bg-green-50/50 rounded-2xl border border-green-100 flex justify-between items-center">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold text-green-700/60">현재 설정 지역</span>
+                  <span className="text-lg font-bold text-green-700/60">내 지역</span>
                   <button 
                     onClick={() => setIsRegionModalOpen(true)}
                     className="text-[14px] font-black text-slate-900 hover:text-green-700 transition-colors bg-orange-50/80 px-3 py-1 rounded-full active:scale-95"
