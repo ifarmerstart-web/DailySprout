@@ -262,7 +262,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                       <div className="w-14 h-14 rounded-2xl overflow-hidden flex-shrink-0 relative ring-2 ring-slate-50 group-hover:ring-green-100 transition-all">
                         {renderItemImage(item, crop)}
                         {schedule.fertilizerAlert && !item.isHarvested && (
-                          <div className="absolute -top-1 -right-1 bg-blue-500 text-white w-6 h-6 rounded-full border-2 border-white flex items-center justify-center text-[10px] animate-pulse shadow-sm">🔋</div>
+                          <div className="absolute -top-1 -right-1 bg-blue-500 text-white w-6 h-6 rounded-full border-2 border-white flex items-center justify-center text-[12px] animate-pulse shadow-sm">🔋</div>
                         )}
                       </div>
                       <div className="flex-1 min-w-0">
@@ -278,7 +278,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                                   <path fillRule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd" />
                                 </svg>
                               </button>
-                              <h3 className="font-black text-slate-800 text-base flex items-center gap-1.5 truncate">
+                              <h3 className="font-black text-slate-800 text-xl flex items-center gap-1.5 truncate">
                                 {crop.name}
                                 {isTooEarly && !item.isHarvested && <span className="text-amber-500 text-xs">⚠️</span>}
                               </h3>
@@ -290,7 +290,7 @@ const GardenTimeline: React.FC<GardenTimelineProps> = ({
                             </p>
                           </div>
                           {!crop.isPerennial ? (
-                            <span className={`text-[10px] font-black px-2 py-1 rounded-lg flex-shrink-0 ${schedule.isHarvestReady ? 'bg-green-100 text-green-700' : 'bg-slate-50 text-slate-400'}`}>
+                            <span className={`text-[10px] font-black px-2 py-1 rounded-lg flex-shrink-0 ${schedule.isHarvestReady ? 'bg-green-100 text-green-700' : 'bg-slate-50 text-slate-600'}`}>
                               {schedule.isHarvestReady ? '🧺 수확 적기' : `D-${remainingDays}`}
                             </span>
                           ) : (
