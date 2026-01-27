@@ -67,7 +67,7 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-bold transition-all border ${
+              className={`whitespace-nowrap px-5 py-2.5 rounded-full text-base font-bold transition-all border ${
                 activeCategory === cat 
                   ? 'bg-green-600 text-white border-green-600 shadow-md scale-105' 
                   : 'bg-white text-slate-400 border-slate-100 hover:bg-slate-50'
@@ -98,23 +98,23 @@ const CropRecommendation: React.FC<CropRecommendationProps> = ({ region, onAdd, 
               <div className="flex-1 flex flex-col justify-between py-0.5">
                 <div>
                   <div className="flex justify-between items-start">
-                    <h3 className="font-bold text-slate-800 text-lg flex items-center gap-1.5">
+                    <h3 className="font-bold text-slate-800 text-xl flex items-center gap-1.5">
                       {crop.name}
-                      {crop.isPerennial && <span className="text-[12px] text-green-600 bg-green-50 px-1 rounded">∞</span>}
+                      {crop.isPerennial && <span className="text-[14px] text-green-600 bg-green-50 px-1 rounded">∞</span>}
                     </h3>
-                    <span className="text-[10px] text-slate-300 font-bold uppercase tracking-widest">{crop.type.split(' ')[0]}</span>
+                    <span className="text-[14px] text-slate-300 font-bold uppercase tracking-widest">{crop.type.split(' ')[0]}</span>
                   </div>
                   <div className="flex items-center gap-1.5 mt-1.5">
                     <span className="text-[12px] font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded-lg border border-green-100">
                       📅 {adjustedDate.getMonth() + 1}월 {adjustedDate.getDate() > 20 ? '하순' : adjustedDate.getDate() > 10 ? '중순' : '상순'}
                     </span>
                   </div>
-                  <p className="text-[12px] text-slate-500 line-clamp-2 mt-2 leading-relaxed font-medium">{crop.description}</p>
+                  <p className="text-[14px] text-slate-500 line-clamp-2 mt-2 leading-relaxed font-medium">{crop.description}</p>
                 </div>
                 <div className="flex justify-end items-center mt-3">
                   <button 
                     onClick={() => onAdd(crop.id)}
-                    className="bg-green-600 text-white text-[12px] px-4 py-1.5 rounded-full font-black hover:bg-green-700 shadow-sm transition-all active:translate-y-0.5"
+                    className="bg-green-600 text-white text-[14px] px-4 py-1.5 rounded-full font-black hover:bg-green-700 shadow-sm transition-all active:translate-y-0.5"
                   >
                     심기 시작
                   </button>
