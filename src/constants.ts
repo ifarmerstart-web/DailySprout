@@ -995,7 +995,7 @@ export const MASTER_CROPS: MasterCrop[] = [
   },
   {
     id: 'jerusalem_artichoke',
-    name: '돼지감자 (뚱딴지)',
+    name: '돼지감자',
     type: '다년생',
     method: PlantingMethod.SEED,
     isPerennial: true,
