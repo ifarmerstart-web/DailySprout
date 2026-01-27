@@ -138,7 +138,7 @@ const App: React.FC = () => {
                   <span className="text-lg font-bold text-green-700/60">현재 설정 지역</span>
                   <button 
                     onClick={() => setIsRegionModalOpen(true)}
-                    className="text-[14px] font-black text-green-600 hover:text-green-700 transition-colors bg-orange-50/80 px-3 py-1 rounded-full active:scale-95"
+                    className="text-[14px] font-black text-slate-900 hover:text-green-700 transition-colors bg-orange-50/80 px-3 py-1 rounded-full active:scale-95"
                   >
                     (변경)
                   </button>
